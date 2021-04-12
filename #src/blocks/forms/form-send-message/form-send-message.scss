@@ -1,0 +1,40 @@
+.form-send-message {
+        &__head {
+            margin-bottom: 40px;
+            &.head {
+                text-align: left;
+                margin-left: 0;
+                margin-right: 0;
+
+                & .head__suptitle {
+                    margin-left: -0.71em;
+                }
+            }
+        }
+        &__rating {
+            margin-bottom: 14px;
+        }
+
+		&__inner {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+		}
+
+		&__input {
+            flex: 0 1 100%;
+            margin-bottom: 32px;
+
+			&_name {
+                @media (min-width: 576px) {
+                    flex: 0 1 calc(50% - 15px);
+                }
+			}
+
+			&_email {
+                @media (min-width: 576px) {
+                    flex: 0 1 calc(50% - 15px);
+                }
+			}
+		}
+}

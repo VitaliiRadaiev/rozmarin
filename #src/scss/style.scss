@@ -1,0 +1,1007 @@
+@mixin font($font_name, $file_name, $weight, $style) {
+	@font-face {
+		font-family: $font_name;
+		font-display: swap;
+		src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2");
+		font-weight: #{$weight};
+		font-style: #{$style};
+	}
+}
+// ==== ШРИФТЫ ===========================================================================================
+@import "fonts";
+// ==== // ШРИФТЫ ===========================================================================================
+
+// ==== ПЕРЕМЕННЫЕ ===========================================================================================
+@import "vars"; 
+// ==== // ПЕРЕМЕННЫЕ ===========================================================================================
+
+
+// ==== НОРМАЛАЙЗ ===========================================================================================
+@import "normalize";
+// ==== // НОРМАЛАЙЗ ===========================================================================================
+
+//<МИКСИНЫ>===============================================================================================
+@import "mixins.scss";
+//</МИКСИНЫ>===============================================================================================
+
+//<ICOMOON>===============================================================================================
+@import "../icomoon/style";
+//</ICOMOON>===============================================================================================
+
+//<FANCYBOX>===============================================================================================
+//@import "fancybox.scss";
+//<FANCYBOX>===============================================================================================
+
+// ==== ПЛАГИНЫ ===========================================================================================
+@import "swiper-bundle";
+@import "drift-basic";
+@import "datepicker";
+// ==== // ПЛАГИНЫ ===========================================================================================
+
+// ==== НАЧАЛЬНЫЕ САТИЛИ ФОРМЫ ===========================================================================================
+@import "forms";
+// ==== НАЧАЛЬНЫЕ САТИЛИ ФОРМЫ ===========================================================================================
+
+
+
+* {
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+}
+*,
+*:before,
+*:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,
+:active {
+	outline: none;
+}
+a:focus,
+a:active {
+	outline: none;
+}
+aside,
+nav,
+footer,
+header,
+section {
+	display: block;
+}
+html {
+	font-size: 10px;
+}
+html,
+body {
+	height: 100%;
+	min-width: $minwidth;
+	margin: 0 auto;
+}
+body {
+	line-height: 1;
+	font-family: $mainFontFamily;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	color: #000;
+	font-size: 1.6rem;
+
+	opacity: 0;
+	transition: opacity .8s ease;
+
+	&.lock {
+		overflow: hidden;
+	}
+
+	&.is-load {
+		opacity: 1;
+	}
+
+}
+
+input,
+button,
+textarea {
+	font-family: $mainFontFamily;
+}
+input::-ms-clear {
+	display: none;
+}
+button {
+	cursor: pointer;
+}
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+ul li {
+	list-style: none;
+}
+img {
+	vertical-align: top;
+}
+// h1,
+// h2,
+// h3,
+// h4,
+// h5,
+// h6 {
+// 	font-weight: inherit;
+// 	font-size: inherit;
+// }
+
+
+
+.center {
+	text-align: center;
+}
+
+.transparent {
+    background: transparent;
+}
+
+.wrapper {
+	width: 100%;
+	min-height: 100%;
+	overflow: hidden;
+	&.loaded {
+	}
+}
+
+main.page {
+	position: relative;
+	z-index: 2;
+}
+
+
+.container {
+	max-width: 1170px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.ibg {
+	position: relative;
+	img {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		object-fit: cover;
+	}
+}
+
+.logo {
+	max-width: 248px;
+	width: 100%;
+	transition: all .3s ease;
+
+	& img {
+		width: 100%;
+	}
+
+	& svg {
+		width: 100%;
+		height: auto;
+
+		& .right-line, & .left-line {
+			stroke-dashoffset:109;
+			stroke-dasharray: 109;
+			animation: animdash 12s infinite ease;
+		}
+
+	}
+}
+
+@keyframes animdash {
+	0% {
+		stroke-dashoffset:0;
+	}
+	50% {
+		stroke-dashoffset:109;
+	}
+	100% {
+		stroke-dashoffset:0;
+	}
+}
+
+
+
+// === title ========================================================================
+.title-1 {
+	font-family: $seconFontFamily;
+	font-size: 80px;
+	line-height: 110%;
+	text-transform: capitalize;
+	color: $titleColor;
+	margin-top: 0;
+	margin-bottom: 0;
+	font-weight: 400;
+
+	@media (max-width: $md3+px) {
+		font-size: 64px;
+	}
+
+	@media (max-width: 575px) {
+		font-size: 38px;
+	}
+}
+.title-2 {
+	 font-family: $seconFontFamily;
+	 font-size: 65px;
+	 line-height: 110%;
+	 text-transform: capitalize;
+	 color: $titleColor;
+	 font-weight: 400;
+
+	 @media (max-width: $md3+px) {
+	 	font-size: 59px;
+	 }
+
+	 @media (max-width: 575px) {
+	 	font-size: 49px;
+	 }
+}
+
+.title-3 {
+	font-family: $seconFontFamily;
+	font-weight: 400;
+	font-size: 48px;
+	line-height: 110%;
+	text-transform: capitalize;
+	color: $titleColor;
+
+	@media (max-width: $md3+px) {
+		font-size: 42px;
+	}
+
+	@media (max-width: 575px) {
+		font-size: 32px;
+	}
+}
+
+.title-4 {
+	font-family: $seconFontFamily;
+	font-weight: 400;
+	font-size: 40px;
+	line-height: 120%;
+	text-transform: capitalize;
+	color: $titleColor;
+
+	@media (max-width: $md3+px) {
+		font-size: 36px;
+	}
+
+	@media (max-width: 575px) {
+		font-size: 28px;
+	}
+}
+
+.title-5 {
+	font-family: $seconFontFamily;
+	font-size: 24px;
+	line-height: 120%;
+	text-transform: capitalize;
+	color: $titleColor;
+
+	@media (max-width: 575px) {
+		font-size: 20px;
+	}
+}
+
+.title-6 {
+	font-family: $seconFontFamily;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 120%;
+	text-transform: capitalize;
+	color: $titleColor;
+}
+
+.suptitle {
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 170%;
+	text-transform: uppercase;
+	color: $mainColor;
+
+	@media (max-width: $md3+px) {
+		font-size: 11px;
+	}
+
+/*	@media (max-width: 575px) {
+		font-size: 9px;
+	}*/
+
+	& > span {
+		margin: 0 0.57em;
+		width: 2.14em;
+		display: inline-block;
+
+		& img {
+			width: 100%;
+		}
+	}
+}
+
+.text {
+	font-size: 16px;
+	line-height: 170%;
+	color: $textColor;
+
+	@media (max-width: 575px) {
+		font-size: 14px;
+	}
+}
+// === and title ========================================================================
+
+
+
+// === btn ========================================================================
+.btn-default {
+	position: relative;
+	display: inline-block;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 170%;
+	text-transform: uppercase;
+	color: $titleColor;
+	padding: 1.08em 3.33em;
+	border-top: 2px solid $titleColor;
+	border-bottom: 2px solid $titleColor;
+	border-left: 2px solid transparent;
+	border-right: 2px solid transparent;
+	transition: all .2s ease .2s;
+
+	&:before, &:after {
+		position: absolute;
+		content: '';
+		top: 0;
+		left: 50%;
+		height: 100%;
+		width: 2px;
+		background: $titleColor;
+		transition: all 0s ease;
+		opacity: 0;
+	}
+
+	@media (min-width: 992px) {
+		&:hover {
+			border-left: 2px solid $titleColor;
+			border-right: 2px solid $titleColor;
+			background: rgba($mainColor, 0.1);
+
+
+			&:before {
+				left: -2px;
+				opacity: 1;
+				transition: all .2s ease;
+			}
+
+			&:after {
+				left: 100%;
+				opacity: 1;
+				transition: all .2s ease;
+			}
+		}
+	}
+
+	@media (max-width: 575px) {
+		font-size: 9px;
+	}
+}
+
+button.btn-default {
+	background: transparent;
+}
+
+
+.btn-submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50px;
+    padding: 10px 40px;
+    background: $mainColor;
+    transition: all .2s ease;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 170%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+    @media (min-width: 992px) {
+        &:hover {
+            background: $hoverLinkColor;
+        }
+    }
+}
+
+// === and btn ========================================================================
+
+.input {
+	min-height: 55px;
+	display: flex;
+	align-items: center;
+	border-bottom: 1px solid rgba($textColor, 0.2);
+	width: 100%;
+	background: transparent;
+
+	&:focus {
+		border-bottom: 1px solid rgba($textColor, 0.8);
+	}
+
+	&::placeholder {
+		font-size: 14px;
+		line-height: 170%;
+		color: $grey;
+	}
+}
+
+.textarea {
+	min-height: 109px;
+	display: flex;
+	align-items: center;
+	border-bottom: 1px solid rgba($textColor, 0.2);
+	resize: none;
+	width: 100%;
+
+	&:focus {
+		border-bottom: 1px solid rgba($textColor, 0.8);
+	}
+
+	&::placeholder {
+		font-size: 14px;
+		line-height: 170%;
+		color: $grey;
+
+	}
+}
+
+.select__select {
+    min-height: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 1px solid rgba($titleColor, 0.1);
+
+    & .select__item {
+        min-width: auto;
+    }
+
+    & .select__value {
+        padding: 0;
+
+        & > span {
+            font-size: 14px;
+            line-height: 170%;
+            color: $grey;
+        }
+    }
+}
+
+
+
+.checkbox-wrap {
+    & .checkbox {
+        display: none;
+
+        &:checked {
+
+            & + .checkbox-wrap__label {
+                &:before {
+                    background-image: url(../img/icons/check-black.svg);
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
+            }
+        }
+    }
+
+    &__label {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 170%;
+        color: $textColor;
+        position: relative;
+        cursor: pointer;
+        display: flex;
+
+
+
+        &:before {
+            margin-top: 3.5px;
+            margin-right: 15px;
+            content: '';
+            height: 14px;
+            min-width: 14px;
+            background-color: #F8F8FA;
+            border: 1px solid rgba(17, 17, 17, 0.1);
+        }   
+    }
+}
+
+
+
+.link {
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 170%;
+	color: $textColor;
+	transition: all .2s ease;
+
+	&:hover {
+		color: $mainColor;
+		text-decoration: none !important;
+	}
+}
+
+
+// === TEXT CONTETN BLOCK ========================================================================
+.text-content {
+	& h1 {
+		font-family: $seconFontFamily;
+		font-size: 80px;
+		line-height: 110%;
+		text-transform: capitalize;
+		color: $titleColor;
+		margin-bottom: 0.75em;
+		margin-top: 0;
+		font-weight: 400;
+	
+		@media (max-width: $md3+px) {
+			font-size: 64px;
+		}
+	
+		@media (max-width: 575px) {
+			font-size: 38px;
+		}
+	}
+	& h2 {
+		font-family: $seconFontFamily;
+		font-size: 65px;
+		line-height: 110%;
+		text-transform: capitalize;
+		color: $titleColor;
+		font-weight: 400;
+		margin-bottom: 0.75em;
+		margin-top: 0;
+   
+		@media (max-width: $md3+px) {
+			font-size: 59px;
+		}
+   
+		@media (max-width: 575px) {
+			font-size: 49px;
+		}
+	}
+	& h3 {
+		font-family: $seconFontFamily;
+		font-weight: 400;
+		font-size: 48px;
+		line-height: 110%;
+		text-transform: capitalize;
+		color: $titleColor;
+		margin-bottom: 0.75em;
+		margin-top: 0;
+	
+		@media (max-width: $md3+px) {
+			font-size: 42px;
+		}
+	
+		@media (max-width: 575px) {
+			font-size: 32px;
+		}
+	}
+	& h4 {
+		font-family: $seconFontFamily;
+		font-weight: 400;
+		font-size: 40px;
+		line-height: 120%;
+		text-transform: capitalize;
+		color: $titleColor;
+		margin-bottom: 0.75em;
+	
+		@media (max-width: $md3+px) {
+			font-size: 36px;
+		}
+	
+		@media (max-width: 575px) {
+			font-size: 28px;
+		}
+	}
+
+	& h5 {
+		font-family: $seconFontFamily;
+		font-size: 24px;
+		line-height: 120%;
+		text-transform: capitalize;
+		color: $titleColor;
+		margin-bottom: 0.83em;
+	
+		@media (max-width: 575px) {
+			font-size: 20px;
+		}
+	}
+	& h6 {
+		font-family: $seconFontFamily;
+		font-weight: bold;
+		font-size: 18px;
+		line-height: 120%;
+		text-transform: capitalize;
+		color: $titleColor;
+		margin-bottom: 0.75em;
+		margin-top: 0;
+	}
+
+	& p {
+		font-size: 16px;
+		line-height: 170%;
+		color: $textColor;
+		margin-bottom: 1em;
+	
+		@media (max-width: 575px) {
+			font-size: 14px;
+		}
+
+		& ~ h5 {
+			margin-top: 1em;
+		}
+	}
+
+	& ul {
+		margin: 30px 0 0;
+		& > li {
+			padding-left: 59px;
+			margin-bottom: 15px;
+			position: relative;
+
+			font-size: 16px;
+			line-height: 170%;
+			color: $textColor;
+
+			@media (max-width: 575px) {
+				padding-left: 30px;
+				font-size: 14px;
+				&:before {
+					left: 5px;
+				}
+			}
+
+			&:before {
+				position: absolute;
+				content: '';
+				top: 5px;
+				left: 30px;
+				width: 14px;
+				height: 15px;
+				background: url(../img/icons/check.svg) center no-repeat;
+				background-size: contain;
+			}
+		}
+	}
+
+	& ol {
+		margin: 30px 0 0;
+		& > li {
+			margin-left: 49px;
+			padding-left: 10px;
+			//padding-left: 59px;
+			margin-bottom: 15px;
+			position: relative;
+
+			font-size: 16px;
+			line-height: 170%;
+			color: $textColor;
+
+			@media (max-width: 575px) {
+				margin-left: 19px;
+				//padding-left: 30px;
+				font-size: 14px;
+			}
+		}
+	}
+
+	& figure {
+		margin: 25px 0 50px;
+
+		@media (max-width: $md4+px) {
+			margin: 15px 0 30px;
+		}
+
+		& img {
+			width: 100%;
+		}
+	}
+
+	& a {
+		font-size: 16px;
+		line-height: 170%;
+		color: $mainColor;
+		margin-bottom: 1em;
+		transition: all .2s ease;
+		font-weight: 500;
+	
+		@media (max-width: 575px) {
+			font-size: 14px;
+		}
+
+		@media (min-width: 992px) {
+			&:hover {
+				color: rgb(241, 24, 64);
+
+			}
+		}
+	}
+
+}
+// === and TEXT CONTETN BLOCK ========================================================================
+
+// === block-column-2 ========================================================================
+.block-column-2 {
+    display: flex;
+
+    @media (max-width: $md2+px) {
+        display: block;
+    }
+}
+.column-1 {
+    flex: 1 1 auto;
+    margin-right: 60px;
+
+    @media (max-width: $md2+px) {
+        margin-right: 0;
+        margin-bottom: 50px;
+    }
+}
+.column-2 {
+    flex: 0 0 329px;
+    padding-left: 49px;
+    border-left: 1px solid rgba($titleColor, 0.1);
+    @media (max-width: $md2+px) {
+       padding-left: 0;
+       border: none;
+    }
+}
+
+
+// === and block-column-2K ========================================================================
+
+
+// === BLOCK COLUMN 3 ========================================================================
+.block-column-3 {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -15px;
+
+	@media (max-width: $md2+px) {
+		margin: 0 -7.5px;
+	}
+
+	& > li {
+		flex: 0 1 33.333%;
+		padding: 0 15px;
+		margin-bottom: 30px;
+
+		@media (max-width: $md2+px) {
+			padding: 0 7.5px;
+		}
+
+		@media (max-width: $md3+px) {
+			flex: 0 1 50%;			
+		}
+
+		@media (max-width: $md4+px) {
+			flex: 0 1 100%;			
+		}
+	}
+}
+// === and BLOCK COLUMN 3 ========================================================================
+
+
+
+
+
+// ==== PAGES =====================================================
+
+	// ==== HOME =====================================================
+	@import "#home";
+	// ==== AND HOME =====================================================
+	
+	// ==== ABOUT =====================================================
+	@import "#about";
+	// ==== AND ABOUT =====================================================
+	
+	// ==== SHOP =====================================================
+	@import "#shop";
+	// ==== AND SHOP =====================================================
+	
+	// ==== PRODUCT PAGE =====================================================
+	@import "#product-page";
+	// ==== AND PRODUCT PAGE =====================================================
+	
+	// ==== CONTACT =====================================================
+	@import "#contact";
+	// ==== AND CONTACT CONTACT =====================================================
+	
+	// ==== FAQ =====================================================
+	@import "#FAQ";
+	// ==== AND FAQ =====================================================
+	
+	// ==== BLOG =====================================================
+	@import "#blog";
+	// ==== AND BLOG =====================================================
+	
+	// ==== BLOGA DETAIL=====================================================
+	@import "#blog-detail";
+	// ==== AND BLOGA DETAIL =====================================================
+	
+	// ==== COLLECTIONS =====================================================
+	@import "#collections";
+	// ==== AND COLLECTIONS  =====================================================
+	
+	// ==== AND COLLECTIONS  =====================================================
+	@import "#cart";
+	// ==== AND COLLECTIONS  =====================================================
+	
+	// ==== CHECKOUT  =====================================================
+	@import "#checkout";
+	// ==== AND CHECKOUT  =====================================================
+	
+	// ==== AND CHECKOUT  =====================================================
+	@import "#wishlist";
+	// ==== AND CHECKOUT  =====================================================
+	
+	// ==== PROFILE  =====================================================
+	@import "#profile";
+	// ==== AND PROFILE  =====================================================
+	
+	// ==== LOG IN  =====================================================
+	@import "#log-in";
+	// ==== AND LOG IN  =====================================================
+	
+	// ==== REGISTRATION  =====================================================
+	@import "#registr";
+	// ==== AND REGISTRATION  =====================================================
+	
+	// ==== PAGE 404 =====================================================
+	@import "#page404";
+	// ==== AND PAGE 404  =====================================================
+
+// ==== AND PAGES =====================================================
+
+
+
+// ==== BLOCKS =====================================================
+	
+	// ==== HEADER =====================================================
+	@import "../blocks/header/header";
+	// ==== AND HEADER =====================================================
+
+	// ==== FOOTER =====================================================
+	@import "../blocks/footer/#footer";
+	// ==== AND FOOTER =====================================================
+
+	// ==== БУРГЕР ===========================================================
+	@import "../blocks/burger/burger";
+	// ==== БУРГЕР ==========================================================
+	
+	// ==== FORM SEARCH ===========================================================
+	@import "../blocks/forms/form-search/form-search";
+	// ==== AND FORM SEARCH ==========================================================
+	
+	// ==== PROMO SLIDER ==========================================================
+	@import "../blocks/promo-slider/promo-slider";
+	// ==== AND PROMO SLIDER ==========================================================
+	
+	// ==== LOGOS BOCK ==========================================================
+	@import "../blocks/logos-block/logos-block";
+	// ==== AND LOGOS BOCK ==========================================================
+	
+	// ==== PRODUCTS CATEGORY ==========================================================
+	@import "../blocks/products-category/products-category";
+	// ==== AND PRODUCTS CATEGORY ==========================================================
+	
+	// ==== HEAD ==========================================================
+	@import "../blocks/head/head";
+	// ==== AND HEAD ==========================================================
+	
+	// ==== POPULAR PRODUCTS ==========================================================
+	@import "../blocks/populsr-products/populsr-products";
+	// ==== AND POPULAR PRODUCTS ==========================================================
+	
+	// ==== CARD ==========================================================
+	@import "../blocks/card/card";
+	// ==== AND CARD ==========================================================
+	
+	// ==== TEXT VIDE BLOCK ==========================================================
+	@import "../blocks/text-video-block/text-video-block";
+	// ==== AND TEXT VIDE BLOCK ==========================================================
+	
+	// ==== VIDEO ==========================================================
+	@import "../blocks/video/video";
+	// ==== AND VIDEO ==========================================================
+	
+	// ==== ADVANTAGES ==========================================================
+	@import "../blocks/advantages/advantages";
+	// ==== AND ADVANTAGES ==========================================================
+	
+	// ==== GET YOUR GIFT ==========================================================
+	@import "../blocks/get-your-gift-block/get-your-gift-block";
+	// ==== AND GET YOUR GIFT ==========================================================
+	
+	// ==== LATEST ARTICLES ==========================================================
+	@import "../blocks/latest-articles/latest-articles";
+	// ==== AND LATEST ARTICLES ==========================================================
+	
+	// ==== CARD ARTICLE ==========================================================
+	@import "../blocks/card-article/card-article";
+	// ==== AND CARD ARTICLE ==========================================================
+	
+	// ==== TESTIMONIALS SLIDER ==========================================================
+	@import "../blocks/testimonials-slider/testimonials-slider";
+	// ==== AND TESTIMONIALS SLIDER ==========================================================
+	
+	// ==== INSTAGRAM BLOCK ==========================================================
+	@import "../blocks/instagram-block/instagram-block";
+	// ==== AND INSTAGRAM BLOCK ==========================================================
+	
+	// ==== TIME BLOCK ==========================================================
+	@import "../blocks/time-block/time-block";
+	// ==== AND TIME BLOCK ==========================================================
+	
+	// ==== HERO ==========================================================
+	@import "../blocks/hero/hero";
+	// ==== AND HERO ==========================================================
+	
+	// ==== BREADCRUMB ==========================================================
+	@import "../blocks/breadcrumb/breadcrumb";
+	// ==== AND BREADCRUMB ==========================================================
+	
+	// ==== VIDEO BLOCK ==========================================================
+	@import "../blocks/video-block/video-block";
+	// ==== AND VIDEO BLOCK ==========================================================
+	
+	// ==== CARD MINI ==========================================================
+	@import "../blocks/card-mini/card-mini";
+	// ==== AND CARD MINI ==========================================================
+	
+	// ==== PAGINATION ==========================================================
+	@import "../blocks/pagination/pagination";
+	// ==== AND PAGINATION ==========================================================
+
+	// ==== RATING ==========================================================
+	@import "../blocks/rating/rating.scss";
+	// ==== AND RATING ==========================================================
+	
+	// ==== FORM SEND MESSAGE ==========================================================
+	@import "../blocks/forms/form-send-message/form-send-message";
+	// ==== AND FORM SEND MESSAGE ==========================================================
+	
+	// ==== CARD TIMER ==========================================================
+	@import "../blocks/card-timer/card-timer";
+	// ==== AND CARD TIMER ==========================================================
+	
+	// ==== CATEGORIES LIST ==========================================================
+	@import "../blocks/categories-list/categories-list";
+	// ==== AND CATEGORIES LIST ==========================================================
+	
+
+
+
+// ==== AND BLOCKS =====================================================
+

@@ -1,0 +1,163 @@
+.popular-products {
+	text-align: center;
+	margin-bottom: 150px;
+	position: relative;
+
+	@media (max-width: $md3+px) {
+		margin-bottom: 70px;
+	}
+
+	&__decor {
+		&_1, &_2 {
+			position: absolute;
+
+			& img {
+				object-fit: contain;
+			}
+		}
+
+		&_1 {
+			width: 324px;
+			height: 507px;
+			z-index: -1;
+			top: 0;
+			right: 0;
+
+		}
+		&_2 {
+			width: 203px;
+			height: 381px;
+			z-index: -1;
+			bottom: 0;
+			left: -30px;
+		}
+	}
+
+	&__head {
+		margin-bottom: 40px;
+
+		@media (max-width: $md3+px) {
+			margin-bottom: 20px;
+		}
+	}
+	&__nav {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin-bottom: 30px;
+
+		@media (max-width: $md3+px) {
+			overflow-x: auto;
+			flex-wrap: nowrap;
+			margin:0 -15px 20px;
+			justify-content: flex-start;
+			padding: 0 15px;
+		}
+
+		& > li {
+			&:not(:last-child) {
+				margin-right: 2.7%;
+			}
+
+			@media (max-width: $md3+px) {
+				&:not(:last-child) {
+					margin-right: 20px;
+				}
+
+				&:last-child {
+					padding-right: 15px;
+				}
+			}
+		}
+	}
+	&__link {
+		display: inline-block;
+		font-size: 14px;
+		line-height: 170%;
+		text-transform: capitalize;
+		color: rgba($titleColor, 0.5);
+		padding: 5px 0 2px;
+		transition: all .2s ease;
+		position: relative;
+		white-space: nowrap;
+
+
+		&.active {
+			color: $titleColor;
+
+			&:before {
+				width: 100%;
+				background: $titleColor;
+			}
+		}
+
+		&:before {
+			position: absolute;
+			content: '';
+			left: 50%;
+			bottom: 0;
+			width: 0%;
+			height: 2px;
+			background: rgba($titleColor, 0.5);
+			transform: translateX(-50%);
+			transition: all .2s ease;
+		}
+
+		@media (min-width: 992px) {
+			&:hover {
+				color: $titleColor;
+
+				&:before {
+					width: 100%;
+					background: $titleColor;
+				}
+			}
+		}
+
+	}
+
+	@keyframes fadeInAnim {
+		from {
+			opacity: 0;
+		}
+		to {
+			opacity: 1;
+		}
+	}
+
+	&__tabs-content {
+		display: none;
+		&.active {
+			display: block;
+			animation: fadeInAnim 0.3s linear;
+		}
+	}
+
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -15px;
+
+		@media (max-width: $md2+px) {
+			margin: 0 -7.5px;
+		}
+
+		& > li {
+			flex: 0 1 33.333%;
+			padding: 0 15px;
+			margin-bottom: 30px;
+
+			@media (max-width: $md2+px) {
+				padding: 0 7.5px;
+			}
+
+			@media (max-width: $md3+px) {
+				flex: 0 1 50%;			
+			}
+
+			@media (max-width: $md4+px) {
+				flex: 0 1 100%;			
+			}
+		}
+	}
+}

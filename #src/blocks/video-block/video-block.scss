@@ -1,0 +1,26 @@
+.video {
+	margin: 50px 0 50px;
+	position: relative;
+
+	&__decor {
+		position: absolute;
+		top: -40px;
+		right: 0;
+		z-index: -1;
+		width: 229px;
+		height: 544px;
+
+		& img {
+			width: 100%;
+		}
+
+	}
+
+	& .video-block {
+		min-height: 500px;
+
+		@media (max-width: $md3+px) {
+			min-height: 350px;
+		}
+	}
+}

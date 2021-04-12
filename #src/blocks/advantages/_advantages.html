@@ -1,0 +1,18 @@
+<section class="advantages">
+	<div class="container">
+		<ul class="advantages__list">
+			@@for (var i = 0; i < data.length; i++) {
+				<li>
+					<div class="advantages__item">
+						<div class="advantages__icon">
+							<img src="`+data[i].icon+`" alt="icon">
+						</div>
+						<h5 class="advantages__title title-5">`+data[i].title+`</h5>
+						<div class="advantages__text text">`+data[i].text+`</div>
+					</div>
+				</li>
+			}
+
+		</ul>
+	</div>
+</section>

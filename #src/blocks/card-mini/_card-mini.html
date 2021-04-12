@@ -1,0 +1,17 @@
+<div class="card-mini">
+	<div class="card-mini__photo ibg">
+		<a href="product-page.html">
+			<img src="@@imgSrc" alt="mini photo">
+		</a>
+	</div>
+	<div class="card-mini__text">
+		<div class="card-mini__title">
+			<a href="product-page.html">@@title</a>
+		</div>
+		<div class="card-mini__price">@@price</div>
+
+		@@if(oldPrice.is === true) {
+			<div class="card-mini__old-price">@@oldPrice.price</div>
+		}
+	</div>
+</div>

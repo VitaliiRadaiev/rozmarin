@@ -1,0 +1,111 @@
+.registr {
+    &__content {
+        margin-bottom: 148px;
+        position: relative;
+
+        @media (max-width: $md3+px) {
+            margin-bottom: 70px;
+        }
+
+        & .block-column-2 {
+            & .column-1 {}
+            & .column-2 {
+                flex: 0 0 430px;
+                padding-left: 0;
+                border: none;
+            }
+        }
+    }
+
+    &__decor {
+        position: absolute;
+        top: 100px;
+        right: 70px;
+        width: 186px;
+        height: 343px;
+        z-index: -1;
+        
+        & img {
+            width: 100%;
+        }
+
+        @media (max-width: $md2+px) {
+            display: none;
+        }
+    }
+ }
+
+
+ .form-registr {
+    max-width: 555px;
+    @media (max-width: $md2+px) {
+        max-width: none;
+    }
+    &__title {
+        margin-bottom: 10px;
+    }
+
+    &__row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 34px;
+
+        &_1 {
+            margin-bottom: 14px;
+        }
+        &_2 {
+            margin-bottom: 0;
+        }
+        &_3 {
+            & > span {
+                font-size: 14px;
+            }
+        }
+
+        & .checkbox-wrap {
+            margin-bottom: 15px;
+        }
+    }
+
+    &__input {
+        margin-bottom: 17px;
+        flex: 0 1 calc(50% - 15px);
+
+        @media (max-width: 575px) {
+            flex: 0 1 100%;
+        }
+    }
+
+    &__forgot-link {
+        display: inline-flex;
+        margin-bottom: 15px;
+        transition: all .2s ease;
+        color: $mainColor;
+        font-weight: 500;
+        font-size: 14px;
+
+        @media (min-width: 992px) {
+            &:hover {
+                color: $hoverLinkColor;
+            }
+        }
+    }
+
+    & .social {
+        display: inline-flex;
+        margin-right: 12px;
+        margin-bottom: 15px;
+        margin-left: -5px;
+
+        & + span {
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+    }
+
+    & .title-6 {
+        margin-bottom: 6px;
+    }
+}

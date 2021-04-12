@@ -1,0 +1,44 @@
+<form action="/" class="form-send-message">
+    @@include('../../head/_head.html',{
+    "parentClass": 'form-send-message__head',
+    "suptitle": {
+    "left": '',
+    "right": '@@suptitle'
+    },
+    "title": '@@title',
+    "subtitle": {
+    "is": false,
+    "text": 'Lorem ipsum dolor sit amet.',
+    },
+    "text": {
+    "is": true,
+    "text": '@@text',
+    },
+    })
+
+    @@if(star === true) {
+        @@include('../../rating/_rating.html',{
+            "parentClass": 'form-send-message__rating big',
+            "edit": 'edit',
+            "stars": '0',
+            "value": {
+            "is": false,
+            "val": '5.0',
+            }
+        })
+    }
+
+    <div class="form-send-message__inner">
+        <div class="form-send-message__input form-send-message__input_name">
+            <input type="text" class="input" placeholder="Enter your name">
+        </div>
+        <div class="form-send-message__input form-send-message__input_email">
+            <input type="email" class="input" placeholder="Enter your email">
+        </div>
+        <div class="form-send-message__input">
+            <textarea class="textarea" placeholder="Enter your feedback"></textarea>
+        </div>
+        <button class="btn-default" type="submit">@@button</button>
+    </div>
+
+</form>

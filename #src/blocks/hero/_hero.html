@@ -1,0 +1,21 @@
+<section class="hero _parallax">
+	<div class="hero__decor layer" data-depth="0.15">
+		<img src="img/hero/decor.png" alt="flowers"> 
+	</div>
+	<div class="hero__img ibg">
+		<img class="lazy" data-src="img/hero/BG img.jpg" src="img/hero/placeholder.jpg" alt="img">
+	</div>
+	<div class="hero__body container">
+		<h1 class="hero__title title-2">
+			@@title
+		</h1>
+		<nav class="breadcrumb" aria-label="breadcrumb">
+		  <ol class="breadcrumb__list">
+		  	@@for (var i = 0; i < breadcrumb.length; i++) {
+		  		<li class="breadcrumb__item"><a href="#">`+breadcrumb[i]+`</a></li>  
+		   }
+		  	<li class="breadcrumb__item active" aria-current="page">@@breadcrumbLast</li>
+		  </ol>
+		</nav>
+	</div>
+</section>

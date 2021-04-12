@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('_head.html',{
+"title": "Joolie"
+})
+
+<body>
+	<!-- == WRAPPER ================== -->
+	<div class="wrapper contact _padding-top">
+		<!-- == HEADER ================== -->
+		@@include('blocks/header/_header.html',{})
+		<!-- == // HEADER ================== -->
+
+		<!-- == PAGE CONTENT ================== -->
+		<main class="page">
+            <!-- == HERO ================== -->
+			@@include('blocks/hero/_hero.html',{
+			"title": 'Contact us',
+			"breadcrumb": ['Home'],
+			"breadcrumbLast": 'Contact us',
+            })
+            <!-- == // HERO ================== -->
+
+            <!-- == ADVANTAGES ================== -->
+            @@include('blocks/advantages/_advantages.html',{
+                "data": [
+                {
+                    "icon": 'img/advantages/icon.svg',
+                    "title": 'company',
+                    "text": '<p>Wedding store \“Joolie\”</p><p><a href=\"#\">info@sitename.com</a></p>',
+                },
+                {
+                    "icon": 'img/advantages/icon(1).svg',
+                    "title": 'location',
+                    "text": '<p>27 Division St, New York,</p><p>NY 10002, USA</p>',
+                },
+                {
+                    "icon": 'img/advantages/icon(2).svg',
+                    "title": 'phone',
+                    "text": '<p>+1 800 452 78 87</p><p>+1 800 452 78 87</p>',
+                },
+                {
+                    "icon": 'img/advantages/icon(3).svg',
+                    "title": 'hours of work',
+                    "text": '<p>Mon - Fri: 9 am - 6 pm</p><p>Sat - Sun: Holiday</p>',
+                },
+            ]
+            })
+            <!-- == // ADVANTAGES ================== -->
+
+            <!-- == FORM BLOCK CONTACT ================== -->
+            <section class="contact__form-block form-block-contact">
+                <div class="container">
+                    <div class="form-block-contact__body">
+                        <div class="form-block-contact__column-1">
+                            @@include('blocks/forms/form-send-message/_form-send-message.html',{
+                                "suptitle": 'be in touch',
+                                'title': "Send us a message",
+                                'text': "We’re always ready to help and make your wedding better.",
+                                 "star": false,  
+                                 'button': "submit",
+                                })
+                        </div>
+                        <div class="form-block-contact__column-2">
+                            @@include('blocks/card-timer/_card-timer.html' {})
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- == // FORM BLOCK CONTACT ================== -->
+
+            <!-- == MAP ================== -->
+            <section class="contact__map">
+                <div id="map"></div>
+            </section>
+            <!-- == // MAP ================== -->
+
+		</main>
+		<!-- == // PAGE CONTENT ================== -->
+
+		<!-- == FOOTER ================== -->
+		@@include('blocks/footer/_footer.html',{})
+		<!-- == // FOOTER ================== -->
+	</div>
+	<!-- == // WRAPPER ================== -->
+	@@include('blocks/popup/_popup.html',{})
+    @@include('_js.html',{})
+    <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7Q82l2QjSzJJk1uUW3OzUBGPTlbk8w1g&callback=initMap&libraries=&v=weekly"
+    defer
+  ></script>
+</body>
+
+</html>

@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+	@@include('_head.html',{
+	"title": "Joolie"
+	})
+	<body>
+		<!-- == WRAPPER ================== -->
+		<div class="wrapper profile _padding-top">
+			<!-- == HEADER ================== -->
+			@@include('blocks/header/_header.html',{})
+			<!-- == // HEADER ================== -->
+
+			<!-- == PAGE CONTENT ================== -->
+			<main class="page">
+                <!-- == HERO ================== -->
+				@@include('blocks/hero/_hero.html',{
+					"title": 'My profile',
+					"breadcrumb": ['Home'], 
+					"breadcrumbLast": 'My profile',
+                })
+                <!-- == // HERO ================== -->
+
+                <!-- == PROFILE CONTENT ================== -->
+                <div class="profile__content _parallax">
+                    <div class="profile__decor layer" data-depth="0.15">
+                        <img src="img/photo/decor.png" alt="flowers">
+                    </div>
+                    <form action="/" class="container">
+                        <div class="block-column-2">
+                            <div class="column-1">
+                                <div class="profile-info">
+                                    <ul class="profile-info__nav">
+                                        <li>
+                                            <a href="#tab-1" class="profile-info__link profile-info__triggers">about me</a>
+                                        </li>
+                                        <li>
+                                            <a href="#tab-2" class="profile-info__link profile-info__triggers active">my orders</a>
+                                        </li>
+                                    </ul>
+                            
+                                    <div id="tab-1" class="profile-info__tabs-content">
+                                        <div class="text-content">
+                                            <h1>Lorem, ipsum dolor.</h1>
+                                            <h2>Lorem, ipsum dolor.</h2>
+                                            <h3>Lorem, ipsum dolor.</h3>
+                                            <h4>Lorem, ipsum dolor.</h4>
+                                            <h5>Lorem, ipsum dolor.</h5>
+                                            <h6>Lorem, ipsum dolor.</h6>
+
+                                            <p>
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa accusantium ab, rerum neque doloribus at mollitia qui. Et quam ut error illo blanditiis aut impedit consectetur fugit consequatur neque. Quo unde fugiat sunt delectus libero aspernatur ut deserunt, dicta necessitatibus?
+                                            </p>
+                                            <p>
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa accusantium ab, rerum neque doloribus at mollitia qui. Et quam ut error illo blanditiis aut impedit consectetur fugit consequatur neque. Quo unde fugiat sunt delectus libero aspernatur ut deserunt, dicta necessitatibus?
+                                            </p>
+
+                                            <ul>
+                                                <li>
+                                                    Lorem ipsum dolor sit.
+                                                </li>
+                                                <li>
+                                                    Lorem ipsum dolor sit.
+                                                </li>
+                                                <li>
+                                                    Lorem ipsum dolor sit.
+                                                </li>
+                                                <li>
+                                                    Lorem ipsum dolor sit.
+                                                </li>
+                                            </ul>
+
+                                            <ol>
+                                                <li>
+                                                    Lorem ipsum dolor sit amet.
+                                                </li>
+                                                <li>
+                                                    Lorem ipsum dolor sit amet.
+                                                </li>
+                                                <li>
+                                                    Lorem ipsum dolor sit amet.
+                                                </li>
+                                                <li>
+                                                    Lorem ipsum dolor sit amet.
+                                                </li>
+                                                <li>
+                                                    Lorem ipsum dolor sit amet.
+                                                </li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                    <div id="tab-2" class="profile-info__tabs-content active">
+                                        <ul class="order-list _spollers">
+                                            <li>
+                                                <div class="order-list__title _spoller _active">
+                                                    <div class="order-list__num">№0112213117</div>
+                                                    <div class="order-list__date">Oct 06, 2020</div>
+                                                    <div class="order-list__status">
+                                                        <span>
+                                                            <img src="img/icons/truck.svg" alt="truck">
+                                                        </span>
+                                                        Сoming to you
+                                                    </div>
+                                                    <div class="order-list__plus"></div>
+                                                </div>
+                                                <div class="order-list__card card-order">
+                                                    <ul class="card-order__list">
+                                                        <li>
+                                                            <div class="card-order__list-left">Navy Classic Suit <span>x1</span></div>
+                                                            <div class="card-order__list-right">$1,318</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="card-order__list-left">Candles For The Ceremony <span>x1</span></div>
+                                                            <div class="card-order__list-right">$69</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="card-order__list-left"><strong>Delivering to: </strong><span>27 Division St, New York, NY 10002, USA</span></div>
+                                                            <div class="card-order__list-right">$25</div>
+                                                        </li>
+                                                        <li class="total">
+                                                            <div class="card-order__list-left">Total</div>
+                                                            <div class="card-order__list-right">$1,412</div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="order-list__title _spoller">
+                                                    <div class="order-list__num">№0112213117</div>
+                                                    <div class="order-list__date">Oct 06, 2020</div>
+                                                    <div class="order-list__status order-list__status_delivered">
+                                                        <span>
+                                                            <img src="img/icons/check-square.svg" alt="truck">
+                                                        </span>
+                                                        Delivered
+                                                    </div>
+                                                    <div class="order-list__plus"></div>
+                                                </div>
+                                                <div class="order-list__card card-order">
+                                                    <ul class="card-order__list">
+                                                        <li>
+                                                            <div class="card-order__list-left">Navy Classic Suit <span>x1</span></div>
+                                                            <div class="card-order__list-right">$1,318</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="card-order__list-left">Candles For The Ceremony <span>x1</span></div>
+                                                            <div class="card-order__list-right">$69</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="card-order__list-left"><strong>Delivering to:</strong><span>27 Division St, New York, NY 10002, USA</span></div>
+                                                            <div class="card-order__list-right">$25</div>
+                                                        </li>
+                                                        <li class="total">
+                                                            <div class="card-order__list-left">Total</div>
+                                                            <div class="card-order__list-right">$1,412</div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="order-list__title _spoller">
+                                                    <div class="order-list__num">№0112213117</div>
+                                                    <div class="order-list__date">Oct 06, 2020</div>
+                                                    <div class="order-list__status order-list__status_delivered">
+                                                        <span>
+                                                            <img src="img/icons/check-square.svg" alt="truck">
+                                                        </span>
+                                                        Delivered
+                                                    </div>
+                                                    <div class="order-list__plus"></div>
+                                                </div>
+                                                <div class="order-list__card card-order">
+                                                    <ul class="card-order__list">
+                                                        <li>
+                                                            <div class="card-order__list-left">Navy Classic Suit <span>x1</span></div>
+                                                            <div class="card-order__list-right">$1,318</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="card-order__list-left">Candles For The Ceremony <span>x1</span></div>
+                                                            <div class="card-order__list-right">$69</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="card-order__list-left"><strong>Delivering to:</strong><span>27 Division St, New York, NY 10002, USA</span></div>
+                                                            <div class="card-order__list-right">$25</div>
+                                                        </li>
+                                                        <li class="total">
+                                                            <div class="card-order__list-left">Total</div>
+                                                            <div class="card-order__list-right">$1,412</div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="order-list__title _spoller">
+                                                    <div class="order-list__num">№0112213117</div>
+                                                    <div class="order-list__date">Oct 06, 2020</div>
+                                                    <div class="order-list__status order-list__status_delivered">
+                                                        <span>
+                                                            <img src="img/icons/check-square.svg" alt="truck">
+                                                        </span>
+                                                        Delivered
+                                                    </div>
+                                                    <div class="order-list__plus"></div>
+                                                </div>
+                                                <div class="order-list__card card-order">
+                                                    <ul class="card-order__list">
+                                                        <li>
+                                                            <div class="card-order__list-left">Navy Classic Suit <span>x1</span></div>
+                                                            <div class="card-order__list-right">$1,318</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="card-order__list-left">Candles For The Ceremony <span>x1</span></div>
+                                                            <div class="card-order__list-right">$69</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="card-order__list-left"><strong>Delivering to:</strong><span>27 Division St, New York, NY 10002, USA</span></div>
+                                                            <div class="card-order__list-right">$25</div>
+                                                        </li>
+                                                        <li class="total">
+                                                            <div class="card-order__list-left">Total</div>
+                                                            <div class="card-order__list-right">$1,412</div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="order-list__title _spoller">
+                                                    <div class="order-list__num">№0112213117</div>
+                                                    <div class="order-list__date">Oct 06, 2020</div>
+                                                    <div class="order-list__status order-list__status_delivered">
+                                                        <span>
+                                                            <img src="img/icons/check-square.svg" alt="truck">
+                                                        </span>
+                                                        Delivered
+                                                    </div>
+                                                    <div class="order-list__plus"></div>
+                                                </div>
+                                                <div class="order-list__card card-order">
+                                                    <ul class="card-order__list">
+                                                        <li>
+                                                            <div class="card-order__list-left">Navy Classic Suit <span>x1</span></div>
+                                                            <div class="card-order__list-right">$1,318</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="card-order__list-left">Candles For The Ceremony <span>x1</span></div>
+                                                            <div class="card-order__list-right">$69</div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="card-order__list-left"><strong>Delivering to:</strong><span>27 Division St, New York, NY 10002, USA</span></div>
+                                                            <div class="card-order__list-right">$25</div>
+                                                        </li>
+                                                        <li class="total">
+                                                            <div class="card-order__list-left">Total</div>
+                                                            <div class="card-order__list-right">$1,412</div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <div class="order-list-bottom">
+                                            <button type="submit" class="order-list-bottom__clean transparent">
+                                                <span>
+                                                    <img src="img/icons/delete-black.svg" alt="icon">
+                                                </span>
+                                                clean history
+                                            </button>
+                                            <div class="checkbox-wrap">
+                                                <input class="checkbox" type="checkbox" id="report" name="">
+                                                <label class="checkbox-wrap__label" for="report">Show only active</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column-2">
+                                <div class="card-timer">
+                                    <div class="card-timer__bg ibg">
+                                        <img src="img/card-timer/bg.jpg" alt="bg">
+                                    </div>
+                                    <div class="card-timer__body">
+                                        <div class="card-timer__inner">
+                                            <div class="card-timer__suptitle suptitle">
+                                                <span><img src="img/icons/icon-circles.svg" alt="icon"></span>
+                                                mega sale 2020
+                                            </div>
+                                            <h3 class="card-timer__title title-3">
+                                                hurry up to <br>
+                                                get your gift
+                                            </h3>
+                                
+                                            @@include('blocks/time-block/_time-block.html',{
+                                                "parentClass": 'get-your-gift-block__time',
+                                            })
+
+                                            
+                                            <a href="collections.html" class="btn-next">
+                                                find a gift <span><img src="img/icons/Arrow-right.svg" alt="arrow"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="shop-aside__reviewed">
+                                    <h4 class="shop-aside__title">Reviewed by you</h4>
+                                    <ul>
+                                        <li>
+                                            @@include('blocks/card-mini/_card-mini.html',{
+                                            "imgSrc": 'img/card-mini/01.png',
+                                            "title": 'White Long Dress With Train',
+                                            "price": '$2,285',
+                                            "oldPrice": {
+                                            is: false,
+                                            price: '',
+                                            },
+                                            })
+                                        </li>
+                                        <li>
+                                            @@include('blocks/card-mini/_card-mini.html',{
+                                            "imgSrc": 'img/card-mini/03.png',
+                                            "title": 'Navy Classic Suit',
+                                            "price": '$$1,318',
+                                            "oldPrice": {
+                                            is: true,
+                                            price: '$1,995',
+                                            },
+                                            })
+                                        </li>
+                                        <li>
+                                            @@include('blocks/card-mini/_card-mini.html',{
+                                            "imgSrc": 'img/card-mini/04.png',
+                                            "title": 'White Long Dress With Train',
+                                            "price": '$69',
+                                            "oldPrice": {
+                                            is: false,
+                                            price: '',
+                                            },
+                                            })
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div> 
+                        </div>
+                    </form>
+                </div>
+                <!-- == // PROFILE CONTENT ================== -->
+                
+			</main>
+			<!-- == // PAGE CONTENT ================== -->
+
+			<!-- == FOOTER ================== -->
+			@@include('blocks/footer/_footer.html',{})
+			<!-- == // FOOTER ================== -->
+		</div>
+		<!-- == // WRAPPER ================== -->
+		@@include('blocks/popup/_popup.html',{})
+		@@include('_js.html',{})
+	</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+	@@include('_head.html',{
+	"title": "Joolie"
+	})
+	<body>
+		<!-- == WRAPPER ================== -->
+		<div class="wrapper blog _padding-top">
+			<!-- == HEADER ================== -->
+			@@include('blocks/header/_header.html',{})
+			<!-- == // HEADER ================== -->
+
+			<!-- == PAGE CONTENT ================== -->
+			<main class="page">
+                <!-- == HERO ================== -->
+                @@include('blocks/hero/_hero.html',{
+					"title": 'Blog',
+					"breadcrumb": ['Home'], 
+					"breadcrumbLast": 'Blog',
+                })
+                <!-- == // HERO ================== -->
+
+                <!-- == BLOG CONTENT ================== -->
+                <section class="blog__content">
+                    <div class="container">
+                        <ul class="blog__list">
+                            <li>
+                                @@include('blocks/card-article/_card-article.html', {
+                                    "parentClass": 'latest-articles__item',
+                                    "imgSrc": 'img/card-article/01.jpg',
+                                    "author": 'Mary Lanoris',
+                                    "date": 'Sep 22, 2020',
+                                    "title": 'How to prepare everything on the high level',
+                                })
+                            </li>
+                            <li>
+                                @@include('blocks/card-article/_card-article.html', {
+                                    "parentClass": 'latest-articles__item',
+                                    "imgSrc": 'img/card-article/02.jpg',
+                                    "author": 'Mary Lanoris',
+                                    "date": 'Sep 22, 2020',
+                                    "title": 'Modern and trading decorations for wedding 2020',
+                                })
+                            </li>
+                            <li>
+                                @@include('blocks/card-article/_card-article.html', {
+                                    "parentClass": 'latest-articles__item',
+                                    "imgSrc": 'img/card-article/03.jpg',
+                                    "author": 'Mary Lanoris',
+                                    "date": 'Sep 22, 2020',
+                                    "title": 'The most important things when you choose the flowers',
+                                })
+                            </li>
+                            <li>
+                                @@include('blocks/card-article/_card-article.html', {
+                                    "parentClass": 'latest-articles__item',
+                                    "imgSrc": 'img/card-article/04.jpg',
+                                    "author": 'Amanda Doris',
+                                    "date": 'Sep 22, 2020',
+                                    "title": 'Popular tricks for your wedding day ceremony',
+                                })
+                            </li>
+                            <li>
+                                @@include('blocks/card-article/_card-article.html', {
+                                    "parentClass": 'latest-articles__item',
+                                    "imgSrc": 'img/card-article/05.jpg',
+                                    "author": 'Katerine Olivers',
+                                    "date": 'Sep 22, 2020',
+                                    "title": 'don’t forget about candy bar for your gests',
+                                })
+                            </li>
+                            <li>
+                                @@include('blocks/card-article/_card-article.html', {
+                                    "parentClass": 'latest-articles__item',
+                                    "imgSrc": 'img/card-article/06.jpg',
+                                    "author": 'Luis Faboritti',
+                                    "date": 'Sep 22, 2020',
+                                    "title": 'The best locations to have an amazing photos',
+                                })
+                            </li>
+                        </ul>
+                        <a href="#" class="btn-default">load more</a>
+                    </div>
+                </section>
+                <!-- == BLOG CONTENT ================== -->
+               
+            </main>
+			<!-- == // PAGE CONTENT ================== -->
+
+			<!-- == FOOTER ================== -->
+			@@include('blocks/footer/_footer.html',{})
+			<!-- == // FOOTER ================== -->
+		</div>
+		<!-- == // WRAPPER ================== -->
+		@@include('blocks/popup/_popup.html',{})
+		@@include('_js.html',{})
+	</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+	@@include('_head.html',{
+	"title": "Joolie"
+	})
+	<body>
+		<!-- == WRAPPER ================== -->
+		<div class="wrapper wishlist _padding-top">
+			<!-- == HEADER ================== -->
+			@@include('blocks/header/_header.html',{})
+			<!-- == // HEADER ================== -->
+
+			<!-- == PAGE CONTENT ================== -->
+			<main class="page">
+                <!-- == HERO ================== -->
+				@@include('blocks/hero/_hero.html',{
+					"title": 'wishlist',
+					"breadcrumb": ['Home'], 
+					"breadcrumbLast": 'wishlist',
+                })
+                <!-- == // HERO ================== -->
+
+                <!-- == WISHLIST CONTENT ================== -->
+                <div class="wishlist__content _parallax">
+                    <div class="wishlist__decor layer" data-depth="0.15">
+                        <img src="img/photo/decor.png" alt="flowers">
+                    </div>
+                    <form action="/" class="container">
+                        <div class="block-column-2">
+                            <div class="column-1">
+                                <div class="selected-products">
+                                    <div class="selected-products__head">
+                                        <div class="selected-products__head-col-1">Product</div>
+                                        <div class="selected-products__head-col-2">Operation</div>
+                                    </div>
+                                    <ul class="selected-products__list">
+                                        <li>
+                                            <div class="card-selected-product">
+                                                <div class="card-selected-product__img ibg">
+                                                    <a href="product-page.html">
+                                                        <img src="img/card-selected-product/01.jpg" alt="img">
+                                                    </a>
+                                                </div>
+                                                <div class="card-selected-product__inner">
+                                                    <div class="card-selected-product__row card-selected-product__row_1">
+                                                        <div class="card-selected-product__title">
+                                                            <span>
+                                                                Navy Classic Suit
+                                                            </span>
+                                                        </div>
+                                                        <a href="#" class="card-selected-product__delete">
+                                                            <span>
+                                                                <img src="img/icons/delete-grey.svg" alt="delete icon">
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="card-selected-product__row card-selected-product__row_2">
+                                                        <div class="card-selected-product__price-wrap">
+                                                            <div class="card-selected-product__price">$1,318</div>
+                                                            <div class="card-selected-product__old-price">$1,995</div>
+                                                        </div>
+                                                        <a class="card-selected-product__add-to-cart" href="#">
+                                                            <span>
+                                                                <img src="img/icons/shopping-bag-black.svg" alt="icon">
+                                                            </span>
+                                                            add to cart
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="card-selected-product">
+                                                <div class="card-selected-product__img ibg">
+                                                    <a href="product-page.html">
+                                                        <img src="img/card-selected-product/02.jpg" alt="img">
+                                                    </a>
+                                                </div>
+                                                <div class="card-selected-product__inner">
+                                                    <div class="card-selected-product__row card-selected-product__row_1">
+                                                        <div class="card-selected-product__title">
+                                                            <span>
+                                                                Candles For The Ceremony
+                                                            </span>
+                                                        </div>
+                                                        <a href="#" class="card-selected-product__delete">
+                                                            <span>
+                                                                <img src="img/icons/delete-grey.svg" alt="delete icon">
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="card-selected-product__row card-selected-product__row_2">
+                                                        <div class="card-selected-product__price-wrap">
+                                                            <div class="card-selected-product__price">$69</div>
+                                                            <div class="card-selected-product__old-price"></div>
+                                                        </div>
+                                                        <a class="card-selected-product__add-to-cart" href="#">
+                                                            <span>
+                                                                <img src="img/icons/shopping-bag-black.svg" alt="icon">
+                                                            </span>
+                                                            add to cart
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="card-selected-product">
+                                                <div class="card-selected-product__img ibg">
+                                                    <a href="product-page.html">
+                                                        <img src="img/card-selected-product/03.jpg" alt="img">
+                                                    </a>
+                                                </div>
+                                                <div class="card-selected-product__inner">
+                                                    <div class="card-selected-product__row card-selected-product__row_1">
+                                                        <div class="card-selected-product__title">
+                                                            <span>
+                                                                White Long Dress With Train
+                                                            </span>
+                                                        </div>
+                                                        <a href="#" class="card-selected-product__delete">
+                                                            <span>
+                                                                <img src="img/icons/delete-grey.svg" alt="delete icon">
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="card-selected-product__row card-selected-product__row_2">
+                                                        <div class="card-selected-product__price-wrap">
+                                                            <div class="card-selected-product__price">$2,285</div>
+                                                            <div class="card-selected-product__old-price"></div>
+                                                        </div>
+                                                        <a class="card-selected-product__add-to-cart" href="#">
+                                                            <span>
+                                                                <img src="img/icons/shopping-bag-black.svg" alt="icon">
+                                                            </span>
+                                                            add to cart
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="selected-products__bottom">
+                                        <a href="#" class="selected-products__clean">
+                                            <span>
+                                                <img src="img/icons/delete-black.svg" alt="icon">
+                                            </span>
+                                            clean Wishlist
+                                        </a>
+                                        <div class="checkbox-wrap">
+                                            <input class="checkbox" type="checkbox" id="report" name="">
+                                            <label class="checkbox-wrap__label" for="report">Report a discount on these products</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column-2">
+                                @@include('blocks/card-timer/_card-timer.html' {})
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!-- == // WISHLIST CONTENT ================== -->
+                
+			</main>
+			<!-- == // PAGE CONTENT ================== -->
+
+			<!-- == FOOTER ================== -->
+			@@include('blocks/footer/_footer.html',{})
+			<!-- == // FOOTER ================== -->
+		</div>
+		<!-- == // WRAPPER ================== -->
+		@@include('blocks/popup/_popup.html',{})
+		@@include('_js.html',{})
+	</body>
+</html>

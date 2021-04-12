@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('_head.html',{
+"title": "Joolie"
+})
+
+<body>
+    <!-- == WRAPPER ================== -->
+    <div class="wrapper product-page _padding-top">
+        <!-- == HEADER ================== -->
+        @@include('blocks/header/_header.html',{})
+        <!-- == // HEADER ================== -->
+
+        <!-- == PAGE CONTENT ================== -->
+        <main class="page">
+
+            <!-- == HERO ================== -->
+            @@include('blocks/hero/_hero.html',{
+            "title": 'Shop',
+            "breadcrumb": ['Home','Shop'],
+            "breadcrumbLast": 'Wedding dress with a neckline from "Joolie"',
+            })
+            <!-- == // HERO ================== -->
+
+            <!-- == PRODUCT PAGE CONTENT ================== -->
+            <section class="product-page__content _parallax">
+                <div class="product-page__decor layer" data-depth="0.15">
+                    <img src="img/photo/decor.png" alt="flowers">
+                </div>
+
+                <div class="container">
+                    <div class="product-page__top top-product-page">
+                        <div class="top-product-page__column-1">
+                            <div class="product-page__slider slider-product">
+
+                                <div class="slider-product__thumbs swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="img/slider-product/thumb01.jpg" alt="mini photo">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="img/slider-product/thumb02.jpg" alt="mini photo">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="img/slider-product/thumb03.jpg" alt="mini photo">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="img/slider-product/thumb04.jpg" alt="mini photo">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="img/slider-product/thumb04.jpg" alt="mini photo">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider-product__main swiper-container">
+                                    <div class="detail"></div>
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img class="zoom" src="img/slider-product/slider01.jpg" alt="img"
+                                                data-zoom="img/slider-product/slider01.jpg">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img class="zoom" src="img/card/01.jpg" data-zoom="img/card/01.jpg"
+                                                alt="img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img class="zoom" src="img/card/02.jpg" data-zoom="img/card/02.jpg"
+                                                alt="img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img class="zoom" src="img/card/03.jpg" data-zoom="img/card/03.jpg"
+                                                alt="img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img class="zoom" src="img/card/04.jpg" data-zoom="img/card/04.jpg"
+                                                alt="img">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="top-product-page__column-2">
+                            <div class="top-product-page__row-1">
+                                <h4 class="top-product-page__title title-4">
+                                    wedding dress with a
+                                    neckline from "Joolie"
+                                </h4>
+                            </div>
+                            <div class="top-product-page__row-2">
+                                <div class="top-product-page__price-wrap">
+                                    <div class="top-product-page__price">$3.855</div>
+                                    <div class="top-product-page__old-price">$4.269</div>
+                                </div>
+                                @@include('blocks/rating/_rating.html',{
+                                "parentClass": 'top-product-page__rating',
+                                "edit": '',
+                                "stars": '5',
+                                "value": {
+                                "is": true,
+                                "val": '5.0',
+                                }
+                                })
+                            </div>
+                            <div class="top-product-page__row-3 text">
+                                Proident in aute pariatur sunt ea fugiat eu tempor incididunt do elit sint. Sunt laborum
+                                dolore amet ex.
+                            </div>
+                            <div class="top-product-page__row-4">
+                                <ul class="top-product-page__size">
+                                    <li>
+                                        <a class="active" href="#">
+                                            xs
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            s
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            m
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            xl
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            xxl
+                                        </a>
+                                    </li>
+                                </ul>
+
+                                <ul class="top-product-page__color">
+                                    <li>
+                                        <a class="active" href="#"
+                                            style="background: #fff; border: 1px solid rgba(0, 0, 0, 0.08);"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" style="background: #FFF3F3; border: 1px solid #FFF3F3;"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" style="background: #FFF8ED; border: 1px solid #FFF8ED;"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" style="background: #F3F8FF; border: 1px solid #F3F8FF;"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" style="background: #EDFFED; border: 1px solid #EDFFED;"></a>
+                                    </li>
+                                </ul>
+
+
+                                <div class="quantity">
+                                    <div class="quantity__button quantity__button_minus"></div>
+                                    <div class="quantity__input">
+                                        <input autocomplete="off" type="text" value="1">
+                                    </div>
+                                    <div class="quantity__button quantity__button_plus"></div>
+                                </div>
+                            </div>
+                            <div class="top-product-page__row-5">
+                                <a href="#" class="top-product-page__btn-add-to-card">add to cart</a>
+                                <a href="#" class="top-product-page__btn-like">
+                                    <span>
+                                        <img src="img/icons/heart.svg" alt="icon">
+                                    </span>
+                                </a>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="product-page__description description-produc-page">
+                        <div class="description-produc-page__column-1 text-content">
+                            <h5>Description</h5>
+                            <p>Cupidatat sint non voluptate culpa reprehenderit magna aliqua mollit ea consequat officia
+                                amet eiusmod in. Ea ullamco irure magna aliqua excepteur ullamco culpa commodo nostrud
+                                enim
+                                dolore. Anim anim ut exercitation officia occaecat ipsum proident. Voluptate veniam eu
+                                adipisicing veniam. Ipsum laborum laboris sunt ea non ea qui nisi laboris. Deserunt duis
+                                velit ex qui. Dolor in ad culpa incididunt dolor aute. Incididunt mollit laboris
+                                deserunt
+                                irure ad id voluptate fugiat mollit ullamco. Cupidatat sint non voluptate culpa
+                                reprehenderit magna aliqua mollit ea consequat officia amet eiusmod in. Ea ullamco irure
+                                magna aliqua excepteur ullamco culpa commodo nostrud enim dolore. Anim anim ut
+                                exercitation
+                                officia occaecat ipsum proident. Voluptate veniam eu adipisicing veniam. Ipsum laborum
+                                laboris sunt ea non ea qui nisi laboris. Deserunt duis velit ex qui. Dolor in ad culpa
+                                incididunt dolor aute. Incididunt mollit laboris deserunt irure ad id voluptate fugiat
+                                mollit ullamco.
+                            </p>
+                        </div>
+                        <div class="description-produc-page__column-2">
+                            <table class="description-produc-page__table">
+                                <tr>
+                                    <td>Silhouette:</td>
+                                    <td>A-line</td>
+                                </tr>
+                                <tr>
+                                    <td>Material:</td>
+                                    <td>natural silk, flower mesh, fine satin</td>
+                                </tr>
+                                <tr>
+                                    <td>Train:</td>
+                                    <td>long, attachable (can be shortened)</td>
+                                </tr>
+                                <tr>
+                                    <td>Features:</td>
+                                    <td>open shoulders, lantern sleeves, corset
+                                        drape, watercolor flowers skirt</td>
+                                </tr>
+                                <tr>
+                                    <td>Collection:</td>
+                                    <td>2020 by Joolie</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="product-page__bottom bottom-product-page">
+                        <div class="bottom-product-page__column-1">
+
+                            <ul class="reviews">
+                                <li class="reviews__item">
+                                    <div class="reviews__head">
+                                        <div class="reviews__photo ibg">
+                                            <img src="img/photo/kelly.png" alt="photo">
+                                        </div>
+                                        <div class="reviews__name">Kelly Firson</div>
+                                        <div class="reviews__date">Jul 19, 2020</div>
+                                        @@include('blocks/rating/_rating.html',{
+                                        "parentClass": 'reviews__rating',
+                                        "edit": '',
+                                        "stars": '5',
+                                        "value": {
+                                        "is": false,
+                                        "val": '5.0',
+                                        }
+                                        })
+                                    </div>
+                                    <div class="reviews__text text">
+                                        I am grateful to the employees of Joolie for the quality products that I have
+                                        been
+                                        using for more than a year, try to work at this level in the future. Thank you!
+                                    </div>
+                                </li>
+                                <li class="reviews__item">
+                                    <div class="reviews__head">
+                                        <div class="reviews__photo ibg">
+                                            <img src="img/photo/kelly.png" alt="photo">
+                                        </div>
+                                        <div class="reviews__name">Kelly Firson</div>
+                                        <div class="reviews__date">Jul 19, 2020</div>
+                                        @@include('blocks/rating/_rating.html',{
+                                        "parentClass": 'reviews__rating',
+                                        "edit": '',
+                                        "stars": '5',
+                                        "value": {
+                                        "is": false,
+                                        "val": '5.0',
+                                        }
+                                        })
+                                    </div>
+                                    <div class="reviews__text text">
+                                        I am grateful to the employees of Joolie for the quality products that I have
+                                        been
+                                        using for more than a year, try to work at this level in the future. Thank you!
+                                    </div>
+                                </li>
+                                <li class="reviews__item">
+                                    <div class="reviews__head">
+                                        <div class="reviews__photo ibg">
+                                            <img src="img/photo/kelly.png" alt="photo">
+                                        </div>
+                                        <div class="reviews__name">Kelly Firson</div>
+                                        <div class="reviews__date">Jul 19, 2020</div>
+                                        @@include('blocks/rating/_rating.html',{
+                                        "parentClass": 'reviews__rating',
+                                        "edit": '',
+                                        "stars": '5',
+                                        "value": {
+                                        "is": false,
+                                        "val": '5.0',
+                                        }
+                                        })
+                                    </div>
+                                    <div class="reviews__text text">
+                                        I am grateful to the employees of Joolie for the quality products that I have
+                                        been
+                                        using for more than a year, try to work at this level in the future. Thank you!
+                                    </div>
+                                </li>
+                            </ul>
+                            <a href="#" class="bottom-product-page__btn-load-more btn-next">
+                                load more
+                                <span><img src="img/icons/Arrow-right.svg" alt="arrow"></span>
+                            </a>
+                        </div>
+                        <div class="bottom-product-page__column-2">
+                            @@include('blocks/forms/form-send-message/_form-send-message.html',{
+                            "suptitle": 'say a word',
+                            'title': "Leave a review",
+                            'text': "Leave your product review so other buyers can rely on your opinion about the product.",
+                             "star": true, 
+                             'button': 'post a review', 
+                            })
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- == // PRODUCT PAGE CONTENT ================== -->
+
+            <!-- == YOU VIEWED ================== -->
+            <section class="you-viewed _parallax">
+                <div class="you-viewed__decor_1 layer" data-depth="0.15">
+                    <img src="img/photo/decor5.png" alt="flowers">
+                </div>
+                <div class="you-viewed__decor_2 layer" data-depth="0.15"> 
+                    <img src="img/photo/decor6.png" alt="flowers">
+                </div>
+
+                <div class="container">
+                    @@include('blocks/head/_head.html',{
+                    "parentClass": 'you-viewed__head',
+                    "suptitle": {
+                    "left": 'look',
+                    "right": 'HERE'
+                    },
+                    "title": 'you Viewed',
+                    "subtitle": {
+                    "is": false,
+                    "text": '',
+                    },
+                    "text": {
+                    "is": false,
+                    "text": '',
+                    },
+                    })
+                    <ul class="block-column-3">
+                        <li>
+                            @@include('blocks/card/_card.html',{
+                            "imgSrc": 'img/card/01.jpg',
+                            "title": 'White Long Dress With Train',
+                            "price": '$2.285',
+                            "oldPrice": {
+                            "is": false,
+                            "price": '$109',
+                            },
+                            "sale": false,
+                            "neww": false,
+
+
+                            })
+                        </li>
+                        <li>
+                            @@include('blocks/card/_card.html',{
+                            "imgSrc": 'img/card/02.jpg',
+                            "title": 'Black Classic Suit',
+                            "price": '$1.855',
+                            "oldPrice": {
+                            "is": true,
+                            "price": '$2169',
+                            },
+                            "sale": false,
+                            "neww": false,
+                            })
+                        </li>
+                        <li>
+                            @@include('blocks/card/_card.html',{
+                            "imgSrc": 'img/card/03.jpg',
+                            "title": 'Beautiful Glasses For Newlyweds',
+                            "price": '$168',
+                            "oldPrice": {
+                            "is": true,
+                            "price": '$239',
+                            },
+                            "sale": false,
+                            "neww": false,
+                            })
+                        </li>
+                    </ul>
+                    @@include('blocks/pagination/_pagination.html', {})
+                </div>
+            </section>
+            <!-- == // YOU VIEWED ================== -->
+
+        </main>
+        <!-- == // PAGE CONTENT ================== -->
+
+        <!-- == FOOTER ================== -->
+        @@include('blocks/footer/_footer.html',{})
+        <!-- == // FOOTER ================== -->
+    </div>
+    <!-- == // WRAPPER ================== -->
+    @@include('blocks/popup/_popup.html',{})
+    @@include('_js.html',{})
+</body>
+
+</html>

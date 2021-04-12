@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('_head.html',{
+"title": "Joolie"
+})
+
+<body>
+	<!-- == WRAPPER ================== -->
+	<div class="wrapper shop _padding-top">
+		<!-- == HEADER ================== -->
+		@@include('blocks/header/_header.html',{})
+		<!-- == // HEADER ================== -->
+
+		<!-- == PAGE CONTENT ================== -->
+		<main class="page">
+			<!-- == HERO ================== -->
+			@@include('blocks/hero/_hero.html',{
+			"title": 'Shop',
+			"breadcrumb": ['Home'],
+			"breadcrumbLast": 'Shop',
+			})
+			<!-- == // HERO ================== -->
+
+			<!-- == SHOP CONTENT ================== -->
+			<section class="shop__content _parallax">
+				<div class="shop__decor layer" data-depth="0.15">
+					<img src="img/photo/decor4.png" alt="flowers">
+				</div>
+				<div class="container">
+					<div class="shop__head head-shop">
+						<div class="head-shop__column_1">
+							@@include('blocks/forms/form-search/_form-search.html',{
+							"modificator": 'form-search_open',
+							"da": '',
+							"placeholder": 'Search',
+							})
+						</div>
+						<div class="head-shop__column_2">
+							<div class="head-shop__product-quantity">
+								There are <strong>4,467 products.</strong>
+							</div>
+							<form action="/" class="form-by-relevance">
+								<select name="" class="form-by-relevance__select">
+									<option value="EUR" selected>By relevance</option>
+									<option value="USD">highest price</option>
+									<option value="USD">Lowest price</option>
+								</select>
+							</form>
+						</div>
+						<div class="head-shop__mobile-btn">
+							<span>
+								<img src="img/icons/equalizer.svg" alt="icon">
+							</span>
+						</div>
+					</div>
+					<div class="shop__body body-shop">
+						<div class="body-shop__column_1 shop-aside">
+							<div class="shop-aside__mobile-btn-close">
+								<span>
+									<img src="img/icons/cancel.svg" alt="close">
+								</span>
+							</div>
+							<div class="shop-aside__categories categories-list">
+								<h4 class="shop-aside__title">Categories</h4>
+								<ul>
+									<li>
+										<a href="#">All <span>(4 260)</span></a>
+									</li>
+									<li>
+										<a href="#">Wedding dresses <span>(977)</span></a>
+									</li>
+									<li>
+										<a href="#">Wedding Suits <span>(428)</span></a>
+									</li>
+									<li>
+										<a href="#">Wedding shoes <span>(549)</span></a>
+									</li>
+									<li>
+										<a href="#">Accessories <span>(694)</span></a>
+									</li>
+									<li>
+										<a href="#">Decorations <span>(867)</span></a>
+									</li>
+									<li>
+										<a href="#">Jewelry <span>(745)</span></a>
+									</li>
+								</ul>
+							</div>
+
+							<form action="/" class="shop-aside__form-filter">
+								<div class="shop-aside__price">
+									<h4 class="shop-aside__title">Price</h4>
+									<div class="price-filter">
+										<div class="price-filter__slider"></div>
+										<div class="price-filter__values values-price-filter" data-min="0"
+											data-max="5000" data-start="500" data-end="3400">
+											<input class="input" id="priceStart" autocomplete="off" type="text" name="">
+											<input class="input" id="priceEnd" autocomplete="off" type="text" name="">
+										</div>
+									</div>
+								</div>
+
+								<div class="shop-aside__colors">
+									<h4 class="shop-aside__title">Colors</h4>
+									<div class="options">
+										<div class="option active"
+											style="background: #333267; border: 1px solid #333267;">
+											<input type="radio" checked="" value="1" name="color">
+										</div>
+										<div class="option " style="background: #111111; border: 1px solid #111111;">
+											<input type="radio" value="2" name="color">
+										</div>
+										<div class="option " style="background: #553434; border: 1px solid #553434;">
+											<input type="radio" value="3" name="color">
+										</div>
+										<div class="option " style="background: #898989; border: 1px solid #898989;">
+											<input type="radio" value="4" name="color">
+										</div>
+										<div class="option " style="background: #A52A2A; border: 1px solid #A52A2A;">
+											<input type="radio" value="5" name="color">
+										</div>
+										<div class="option"
+											style="background: #fff; border: 1px solid rgba(0, 0, 0, 0.08);">
+											<input type="radio" value="6" name="color">
+										</div>
+										<div class="option " style="background: #FFF3F3; border: 1px solid #FFF3F3;">
+											<input type="radio" value="7" name="color">
+										</div>
+										<div class="option " style="background: #FFF8ED; border: 1px solid #FFF8ED;">
+											<input type="radio" value="8" name="color">
+										</div>
+										<div class="option " style="background: #F3F8FF; border: 1px solid #F3F8FF;">
+											<input type="radio" value="9" name="color">
+										</div>
+										<div class="option " style="background: #EDFFED; border: 1px solid #EDFFED;">
+											<input type="radio" value="10" name="color">
+										</div>
+									</div>
+								</div>
+								<button class="btn-default">apply filter</button>
+							</form>
+
+							<div class="shop-aside__reviewed">
+								<h4 class="shop-aside__title">Reviewed by you</h4>
+								<ul>
+									<li>
+										@@include('blocks/card-mini/_card-mini.html',{
+										"imgSrc": 'img/card-mini/01.png',
+										"title": 'White Long Dress With Train',
+										"price": '$2,285',
+										"oldPrice": {
+										is: false,
+										price: '',
+										},
+										})
+									</li>
+									<li>
+										@@include('blocks/card-mini/_card-mini.html',{
+										"imgSrc": 'img/card-mini/03.png',
+										"title": 'Navy Classic Suit',
+										"price": '$$1,318',
+										"oldPrice": {
+										is: true,
+										price: '$1,995',
+										},
+										})
+									</li>
+									<li>
+										@@include('blocks/card-mini/_card-mini.html',{
+										"imgSrc": 'img/card-mini/04.png',
+										"title": 'White Long Dress With Train',
+										"price": '$69',
+										"oldPrice": {
+										is: false,
+										price: '',
+										},
+										})
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="body-shop__column_2 ">
+							<ul class="body-shop__list">
+								<li>
+									@@include('blocks/card/_card.html',{
+									"imgSrc": 'img/card/01.jpg',
+									"title": 'White Long Dress With Train',
+									"price": '$2.285',
+									"oldPrice": {
+									"is": false,
+									"price": '$109',
+									},
+									"sale": true,
+									"neww": true,
+									})
+								</li>
+								<li>
+									@@include('blocks/card/_card.html',{
+									"imgSrc": 'img/card/02.jpg',
+									"title": 'Black Classic Suit',
+									"price": '$1.855',
+									"oldPrice": {
+									"is": true,
+									"price": '$2169',
+									},
+									"sale": true,
+									"neww": false,
+									})
+								</li>
+								<li>
+									@@include('blocks/card/_card.html',{
+									"imgSrc": 'img/card/03.jpg',
+									"title": 'Beautiful Glasses For Newlyweds',
+									"price": '$168',
+									"oldPrice": {
+									"is": true,
+									"price": '$239',
+									},
+									"sale": true,
+									"neww": true,
+									})
+								</li>
+								<li>
+									@@include('blocks/card/_card.html',{
+									"imgSrc": 'img/card/04.jpg',
+									"title": 'Candles For The Ceremony',
+									"price": '$69',
+									"oldPrice": {
+									"is": false,
+									"price": '$239',
+									},
+									"sale": true,
+									"neww": true,
+									})
+								</li>
+								<li>
+									@@include('blocks/card/_card.html',{
+									"imgSrc": 'img/card/05.jpg',
+									"title": 'White Long Dress With Train',
+									"price": '$2.795',
+									"oldPrice": {
+									"is": false,
+									"price": '$239',
+									},
+									"sale": false,
+									"neww": false,
+									})
+								</li>
+								<li>
+									@@include('blocks/card/_card.html',{
+									"imgSrc": 'img/card/06.jpg',
+									"title": 'Navy Classic Suit',
+									"price": '$1,318',
+									"oldPrice": {
+									"is": true,
+									"price": '$1.995',
+									},
+									"sale": true,
+									"neww": false,
+									})
+								</li>
+								<li>
+									@@include('blocks/card/_card.html',{
+									"imgSrc": 'img/card/01.jpg',
+									"title": 'White Long Dress With Train',
+									"price": '$2.285',
+									"oldPrice": {
+									"is": false,
+									"price": '$109',
+									},
+									"sale": true,
+									"neww": true,
+									})
+								</li>
+								<li>
+									@@include('blocks/card/_card.html',{
+									"imgSrc": 'img/card/02.jpg',
+									"title": 'Black Classic Suit',
+									"price": '$1.855',
+									"oldPrice": {
+									"is": true,
+									"price": '$2169',
+									},
+									"sale": true,
+									"neww": false,
+									})
+								</li>
+								<li>
+									@@include('blocks/card/_card.html',{
+									"imgSrc": 'img/card/03.jpg',
+									"title": 'Beautiful Glasses For Newlyweds',
+									"price": '$168',
+									"oldPrice": {
+									"is": true,
+									"price": '$239',
+									},
+									"sale": true,
+									"neww": true,
+									})
+								</li>
+							</ul>
+							@@include('blocks/pagination/_pagination.html', {})
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- == // SHOP CONTENT ================== -->
+
+		</main>
+		<!-- == // PAGE CONTENT ================== -->
+
+		<!-- == FOOTER ================== -->
+		@@include('blocks/footer/_footer.html',{})
+		<!-- == // FOOTER ================== -->
+	</div>
+	<!-- == // WRAPPER ================== -->
+	@@include('blocks/popup/_popup.html',{})
+	@@include('_js.html',{})
+</body>
+
+</html>

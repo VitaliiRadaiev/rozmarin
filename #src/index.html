@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+	@@include('_head.html',{
+	"title": "Joolie"
+	})
+	<body>
+		<!-- == WRAPPER ================== -->
+		<div class="wrapper home">
+			<!-- == HEADER ================== -->
+			@@include('blocks/header/_header.html',{})
+			<!-- == // HEADER ================== -->
+
+			<!-- == PAGE CONTENT ================== -->
+			<main class="page">
+				<!-- == PROMO SLIDER ================== -->
+				@@include('blocks/promo-slider/_promo-slider.html',{})
+				<!-- == // PROMO SLIDER ================== -->
+
+				<!-- == LOGOS BLOCK ================== -->
+				@@include('blocks/logos-block/_logos-block.html',{})
+				<!-- == // LOGOS BLOCK ================== -->
+
+				<!-- == PRODUCTS CATEGORY ================== -->
+				@@include('blocks/products-category/_products-category.html',{})
+				<!-- == // PRODUCTS CATEGORY ================== -->
+
+				<!-- == POPULARS PRODUCTS ================== -->
+				@@include('blocks/populsr-products/_populsr-products.html',{})
+				<!-- == // POPULARS PRODUCTS ================== -->
+
+				<!-- == TEXT VIDEO BLOCK ================== -->
+				@@include('blocks/text-video-block/_text-video-block.html',{})
+				<!-- == // TEXT VIDEO BLOCK ================== -->
+
+				<!-- == ADVANTAGES ================== -->
+				@@include('blocks/advantages/_advantages.html',{
+					"data": [
+                    {
+                        "icon": 'img/advantages/icon-dress.svg',
+                        "title": 'wide selection',
+                        "text": 'А huge number of products for your celebration day.',
+                    },
+                    {
+                        "icon": 'img/advantages/icon-delivery.svg',
+                        "title": 'fast Delivery',
+                        "text": 'We deliver the next day after the order, as you wish.',
+					},
+					{
+                        "icon": 'img/advantages/icon-girl.svg',
+                        "title": 'individual approach',
+                        "text": 'We discuss all the little things you need and want.',
+                    },
+                    {
+                        "icon": 'img/advantages/icon-idea.svg',
+                        "title": 'Creative ideas',
+                        "text": 'Our designers are full of new creative ideas for you.',
+                    },
+                ]
+				})
+				<!-- == // ADVANTAGES ================== -->
+
+				<!-- == GET YOUR GIFT BLOCK ================== -->
+				@@include('blocks/get-your-gift-block/_get-your-gift-block.html',{})
+				<!-- == // GET YOUR GIFT BLOCK ================== -->
+
+				<!-- == LATEST ARTICLES ================== -->
+				@@include('blocks/latest-articles/_latest-articles.html',{})
+				<!-- == // LATEST ARTICLES ================== -->
+
+				<!-- == TESTIMONIALS SLIDER ================== -->
+				@@include('blocks/testimonials-slider/_testimonials-slider.html',{})
+				<!-- == // TESTIMONIALS SLIDER ================== -->
+
+				<!-- == INSTAGRAM BLOCK ================== -->
+				@@include('blocks/instagram-block/_instagram-block.html',{})
+				<!-- == // INSTAGRAM BLOCK ================== -->
+			</main>
+			<!-- == // PAGE CONTENT ================== -->
+
+			<!-- == FOOTER ================== -->
+			@@include('blocks/footer/_footer.html',{})
+			<!-- == // FOOTER ================== -->
+		</div>
+		<!-- == // WRAPPER ================== -->
+		@@include('blocks/popup/_popup.html',{})
+		@@include('_js.html',{})
+	</body>
+</html>

@@ -1,0 +1,88 @@
+.advantages {
+	margin: 150px 0 110px;
+
+	@media (max-width: $md3+px) {
+		margin: 70px 0 40px;
+	}
+
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -10px;
+		justify-content: center;
+
+		& > li {
+			flex: 0 1 25%;
+			padding: 0 10px;
+			margin-bottom: 40px;
+
+			@media (max-width: $md2+px) {
+				flex: 0 1 33.333%;
+			}
+
+
+			@media (max-width: $md3+px) {
+				flex: 0 1 50%;
+			}
+		}
+	}
+	&__item {}
+	&__icon {
+		height: 40px;
+		margin-bottom: 35px;
+		position: relative;
+
+		@media (max-width: $md3+px) {
+			margin-bottom: 20px;
+		}
+
+		& img {
+			height: 100%;
+		}
+
+		&:before {
+			content: '';
+			width: 65px;
+			height: 0;
+			padding-bottom: 9.75%;
+			background: url('../img/advantages/object-right.svg') center no-repeat;
+			background-size: contain;
+			position: absolute;
+			top: 50%;
+			left: 60px;
+			transform: translateY(-50%);
+		}
+	}
+	&__title {
+		margin-bottom: 10px;
+		position: relative;
+		display: inline-flex;
+		align-items: center;
+		flex-wrap: wrap;
+
+		&:after {
+			margin-left: 5px;
+			content: '';
+			width: 65px;
+			height: 0;
+			padding-bottom: 9.75%;
+			background: url('../img/advantages/object-right.svg') center no-repeat;
+			background-size: contain;
+			display: inline-block;
+			display: none;
+		}
+	}
+	&__text {
+		& a {
+			font-weight: 500;
+			color: $mainColor;
+			transition: all .2s ease;
+
+			@media (min-width: 992px) {
+				&:hover {
+					color: rgba($mainColor, 0.6);
+				}
+			}
+		}
+	}
+}

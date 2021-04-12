@@ -1,0 +1,41 @@
+.video-block {
+	height: 100%;
+	width: 100%;
+	position: relative;
+
+	&__video {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		z-index: 1;
+	}
+
+	&__play-pause {
+		position: absolute;
+		height: 175px;
+		width: 175px;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		color: #fff;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 175px;
+		z-index: 2;
+		cursor: pointer;
+
+		@media (max-width: $md3+px) {
+			font-size: 70px;
+			height: 75px;
+			width: 75px;
+		}
+	}
+}
+.ibg {
+}
+.icon-play3 {
+}

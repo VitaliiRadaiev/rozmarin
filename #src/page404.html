@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	@@include('_head.html',{
+	"title": "Joolie"
+	})
+	<body>
+		<!-- == WRAPPER ================== -->
+		<div class="wrapper page404 _padding-top">
+			<!-- == HEADER ================== -->
+			@@include('blocks/header/_header.html',{})
+			<!-- == // HEADER ================== -->
+
+			<!-- == PAGE CONTENT ================== -->
+			<main class="page">
+				<!-- == HERO ================== -->
+				@@include('blocks/hero/_hero.html',{
+					"title": 'Oops!',
+					"breadcrumb": ['Home'], 
+					"breadcrumbLast": '404',
+                })
+				<!-- == // HERO ================== -->
+
+				<!-- == PAGE 404 CONTENT ================== -->
+                <section class="page404__content">
+                    <div class="page404__decor layer" data-depth="0.15">
+                        <img src="img/photo/decor.png" alt="flowers">
+                    </div>
+                    <div class="container">
+                        <img src="img/photo/flowers.png" alt="flowers" class="page404__img">
+                        <h2 class="page404__title">404</h2>
+                        <div class="page404__subtitle ">Page not found</div>
+                        <div class="page404__text text">It looks like nothing was found at this location. Maybe try a search?</div> 
+                        @@include('blocks/forms/form-search/_form-search.html',{
+                            "modificator": 'form-search_open',
+                            "da": '',
+                            "placeholder": 'Search',
+                        })
+                    </div>
+                </section>
+				<!-- == // PAGE 404 CONTENT ================== -->
+				
+			</main>
+			<!-- == // PAGE CONTENT ================== -->
+
+			<!-- == FOOTER ================== -->
+			@@include('blocks/footer/_footer.html',{})
+			<!-- == // FOOTER ================== -->
+		</div>
+		<!-- == // WRAPPER ================== -->
+		@@include('blocks/popup/_popup.html',{})
+		@@include('_js.html',{})
+	</body>
+</html>

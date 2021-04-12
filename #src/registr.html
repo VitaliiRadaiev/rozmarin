@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+	@@include('_head.html',{
+	"title": "Joolie"
+	})
+	<body>
+		<!-- == WRAPPER ================== -->
+		<div class="wrapper registr _padding-top">
+			<!-- == HEADER ================== -->
+			@@include('blocks/header/_header.html',{})
+			<!-- == // HEADER ================== -->
+
+			<!-- == PAGE CONTENT ================== -->
+			<main class="page">
+                <!-- == HERO ================== -->
+				@@include('blocks/hero/_hero.html',{
+					"title": 'Registration',
+					"breadcrumb": ['Home'], 
+					"breadcrumbLast": 'Registration', 
+                })
+                <!-- == // HERO ================== -->
+
+                <!-- == REGISTRATION CONTENT ================== -->
+                <div class="registr__content _parallax">
+                    <div class="registr__decor layer" data-depth="0.15">
+                        <img src="img/photo/decor.png" alt="flowers">
+                    </div>
+                    <form action="/" class="container">
+                        <div class="block-column-2">
+                            <div class="column-1">
+                                <div class="form-registr">
+                                    <h4 class="form-registr__title title-4">Sign up with</h4>
+                                    <ul class="social">
+                                        <li>
+                                            <a class="social__item" href="#">
+                                                <span>
+                                                    <img src="img/icons/facebook-colour.svg" alt="facebook">
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="social__item" href="#">
+                                                <span>
+                                                    <img src="img/icons/twitter-colour.svg" alt="twitter">
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="social__item" href="#">
+                                                <span>
+                                                    <img src="img/icons/g+-colour.svg" alt="instagram">
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <span>or use your email address below.</span>
+                                    <div class="form-registr__row form-registr__row_1">
+                                        <div class="form-registr__input">
+                                            <input type="text" class="input" placeholder="Enter your name">
+                                        </div>
+                                        <div class="form-registr__input">
+                                            <input type="text" class="input" placeholder="Enter your last name ">
+                                        </div>
+                                        <div class="form-registr__input">
+                                            <input type="email" class="input" placeholder="Enter your email">
+                                        </div>
+                                        <div class="form-registr__input">
+                                            <input type="text" class="input _mask" placeholder="Enter your phone" data-mask="+1(99)999-99-99">
+                                        </div>
+                                    </div>
+                                    <h6 class="title-6">Password</h6>
+                                    <div class="form-registr__row form-registr__row_2">
+                                        <div class="form-registr__input">
+                                            <input type="password" class="input" placeholder="Enter password">
+                                        </div>
+                                        <div class="form-registr__input">
+                                            <input type="password" class="input" placeholder="Repeat password">
+                                        </div>
+                                    </div>
+                                    <div class="form-registr__row form-registr__row_3">
+                                        <div class="checkbox-wrap">
+                                            <input class="checkbox" type="checkbox" id="report" name="" checked>
+                                            <label class="checkbox-wrap__label" for="report">I accept the Terms of use.</label>
+                                        </div>
+                                        <span>
+                                            Are you already registered? <a href="#" class="form-registr__forgot-link">Log in</a>
+                                        </span>
+                                        
+                                    </div>
+                                    <button class="btn-default" type="submit">register now</button>
+                                </div>
+                            </div>
+                            <div class="column-2">
+                                <div class="card-timer">
+                                    <div class="card-timer__bg ibg">
+                                        <img src="img/card-timer/bg.jpg" alt="bg">
+                                    </div>
+                                    <div class="card-timer__body">
+                                        <div class="card-timer__inner">
+                                            <div class="card-timer__suptitle suptitle">
+                                                <span><img src="img/icons/icon-circles.svg" alt="icon"></span>
+                                                mega sale 2020
+                                            </div>
+                                            <h3 class="card-timer__title title-3">
+                                                hurry up to <br>
+                                                get your gift
+                                            </h3>
+                                
+                                            @@include('blocks/time-block/_time-block.html',{
+                                                "parentClass": 'get-your-gift-block__time',
+                                            })
+                                            <a href="collections.html" class="btn-default">find a gift</a>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div> 
+                        </div>
+                    </form>
+                </div>
+                <!-- == // REGISTRATION CONTENT ================== -->
+
+			</main>
+			<!-- == // PAGE CONTENT ================== -->
+
+			<!-- == FOOTER ================== -->
+			@@include('blocks/footer/_footer.html',{})
+			<!-- == // FOOTER ================== -->
+		</div>
+		<!-- == // WRAPPER ================== -->
+		@@include('blocks/popup/_popup.html',{})
+		@@include('_js.html',{})
+	</body>
+</html>

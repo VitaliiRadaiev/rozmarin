@@ -1,0 +1,34 @@
+<section class="text-video-block _parallax">
+	<div class="text-video-block__decor layer" data-depth="0.15">
+		<img src="img/text-video-block/decor.png" alt="flowers">
+	</div>
+
+	<div class="text-video-block__body">
+		<div class="text-video-block__column">
+			<div class="text-video-block__text-wrap">
+					@@include('../head/_head.html',{
+						"parentClass": 'text-video-block__text',
+						"suptitle": {
+							"left": '',
+							"right": 'find your beauty'
+						},
+						"title": 'we work hard for your happy moment',
+						"subtitle": {
+							"is": true,
+							"text": 'We know that this is the best day of your life and it should be unforgettable.',
+						},
+						"text": {
+							"is": true,
+							"text": 'We are a professional team with many years of experience and we know how to do everything in the best way. Wel prepare the perfect version of your holiday for you. Let this day be just the beginning ...',
+						},
+				    })
+				    <a href="blog-detail.html" class="btn-default">read more</a>
+			</div>
+		</div>
+		<div class="text-video-block__column">
+			@@include('../video/_video.html',{
+				"poster": 'img/text-video-block/poster.jpg',
+			})
+		</div>
+	</div>
+</section>

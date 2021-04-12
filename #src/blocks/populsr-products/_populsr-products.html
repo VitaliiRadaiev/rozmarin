@@ -1,0 +1,252 @@
+<section class="popular-products _parallax">
+	<div class="popular-products__decor_1 layer" data-depth="0.30">
+		<img src="img/populsr-products/decor1.png" alt="flowers">
+	</div>
+	<div class="popular-products__decor_2 layer" data-depth="0.30">
+		<img src="img/populsr-products/decor2.png" alt="flowers">
+	</div>
+
+	<div class="container">
+		@@include('../head/_head.html',{
+			"parentClass": 'popular-products__head',
+			"suptitle": {
+				"left": 'look',
+				"right": 'here'
+			},
+			"title": 'Popular products',
+			"subtitle": {
+				"is": false,
+				"text": 'Lorem ipsum dolor sit amet.',
+			},
+			"text": {
+				"is": false,
+				"text": '',
+			},
+	    })
+		<ul class="popular-products__nav">
+			<li>
+				<a href="#tab-1" class="popular-products__link popular-products__triggers active">all</a>
+			</li>
+			<li>
+				<a href="#tab-2" class="popular-products__link popular-products__triggers">Wedding dresses</a>
+			</li>
+			<li>
+				<a href="#tab-3" class="popular-products__link popular-products__triggers">Wedding Suits</a>
+			</li>
+			<li>
+				<a href="#tab-4" class="popular-products__link popular-products__triggers">Wedding shoes</a>
+			</li>
+			<li>
+				<a href="#tab-5" class="popular-products__link popular-products__triggers">accessories</a>
+			</li>
+			<li>
+				<a href="#tab-6" class="popular-products__link popular-products__triggers">Decorations</a>
+			</li>
+			<li>
+				<a href="#tab-7" class="popular-products__link popular-products__triggers">Jewelry</a>
+			</li>
+		</ul>
+
+		<div id="tab-1" class="popular-products__tabs-content active">
+			<ul class="popular-products__list">
+				<li>
+					@@include('../card/_card.html',{
+						"imgSrc": 'img/card/01.jpg',
+						"title": 'White Long Dress With Train',
+						"price": '$2.285',
+						"oldPrice": {
+							"is": false,
+							"price": '$109',
+						},
+						"sale": false,
+						"neww": false,
+
+
+					})
+				</li>
+				<li>
+					@@include('../card/_card.html',{
+						"imgSrc": 'img/card/02.jpg',
+						"title": 'Black Classic Suit',
+						"price": '$1.855',
+						"oldPrice": {
+							"is": true,
+							"price": '$2169',
+						},
+						"sale": false,
+						"neww": false,
+					})
+				</li>
+				<li>
+					@@include('../card/_card.html',{
+						"imgSrc": 'img/card/03.jpg',
+						"title": 'Beautiful Glasses For Newlyweds',
+						"price": '$168',
+						"oldPrice": {
+							"is": true,
+							"price": '$239',
+						},
+						"sale": false,
+						"neww": false,
+					})
+				</li>
+				<li>
+					@@include('../card/_card.html',{
+						"imgSrc": 'img/card/04.jpg',
+						"title": 'Candles For The Ceremony',
+						"price": '$69',
+						"oldPrice": {
+							"is": false,
+							"price": '$239',
+						},
+						"sale": false,
+						"neww": false,
+					})
+				</li>
+				<li>
+					@@include('../card/_card.html',{
+						"imgSrc": 'img/card/05.jpg',
+						"title": 'White Long Dress With Train',
+						"price": '$2.795',
+						"oldPrice": {
+							"is": false,
+							"price": '$239',
+						},
+						"sale": false,
+						"neww": false,
+					})
+				</li>
+				<li>
+					@@include('../card/_card.html',{
+						"imgSrc": 'img/card/06.jpg',
+						"title": 'Navy Classic Suit',
+						"price": '$1,318',
+						"oldPrice": {
+							"is": true,
+							"price": '$1.995',
+						},
+						"sale": false,
+						"neww": false,
+					})
+				</li>
+			</ul>
+		</div>
+		<div id="tab-2" class="popular-products__tabs-content">
+			<ul class="popular-products__list">
+				<li>
+					@@include('../card/_card.html',{
+						"imgSrc": 'img/card/01.jpg',
+						"title": 'White Long Dress With Train',
+						"price": '$2.285',
+						"oldPrice": {
+							"is": false,
+							"price": '$109',
+						},
+						"sale": false,
+						"neww": false,
+					})
+				</li>
+				<li>
+					@@include('../card/_card.html',{
+						"imgSrc": 'img/card/02.jpg',
+						"title": 'Black Classic Suit',
+						"price": '$1.855',
+						"oldPrice": {
+							"is": true,
+							"price": '$2169',
+						},
+						"sale": false,
+						"neww": false,
+					})
+				</li>
+			</ul>
+		</div>
+		<div id="tab-3" class="popular-products__tabs-content">
+			<ul class="popular-products__list">
+				<li>
+					@@include('../card/_card.html',{
+						"imgSrc": 'img/card/02.jpg',
+						"title": 'Black Classic Suit',
+						"price": '$1.855',
+						"oldPrice": {
+							"is": true,
+							"price": '$2169',
+						},
+						"sale": false,
+						"neww": false,
+					})
+				</li>
+			</ul>
+		</div>
+		<div id="tab-4" class="popular-products__tabs-content">
+			<ul class="popular-products__list">
+				<li>
+					@@include('../card/_card.html',{
+						"imgSrc": 'img/card/03.jpg',
+						"title": 'Black Classic Suit',
+						"price": '$1.855',
+						"oldPrice": {
+							"is": true,
+							"price": '$2169',
+						},
+						"sale": false,
+						"neww": false,
+					})
+				</li>
+			</ul>
+		</div>
+		<div id="tab-5" class="popular-products__tabs-content">
+			<ul class="popular-products__list">
+				<li>
+					@@include('../card/_card.html',{
+						"imgSrc": 'img/card/04.jpg',
+						"title": 'Black Classic Suit',
+						"price": '$1.855',
+						"oldPrice": {
+							"is": true,
+							"price": '$2169',
+						},
+						"sale": false,
+						"neww": false,
+					}) 
+				</li>
+			</ul>
+		</div>
+		<div id="tab-6" class="popular-products__tabs-content">
+			<ul class="popular-products__list">
+				<li>
+					@@include('../card/_card.html',{
+						"imgSrc": 'img/card/05.jpg',
+						"title": 'Black Classic Suit',
+						"price": '$1.855',
+						"oldPrice": {
+							"is": true,
+							"price": '$2169',
+						},
+						"sale": false,
+						"neww": false,
+					})
+				</li>
+			</ul>
+		</div>
+		<div id="tab-7" class="popular-products__tabs-content">
+			<ul class="popular-products__list">
+				<li>
+					@@include('../card/_card.html',{
+						"imgSrc": 'img/card/02.jpg',
+						"title": 'Black Classic Suit',
+						"price": '$1.855',
+						"oldPrice": {
+							"is": true,
+							"price": '$2169',
+						},
+						"sale": false,
+						"neww": false,
+					})
+				</li>
+			</ul>
+		</div>
+
+		<a href="shop.html" class="btn-default">view all products</a> 	   
+	</div>
+</section>

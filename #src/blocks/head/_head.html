@@ -1,0 +1,16 @@
+<div class="@@parentClass head">
+	<div class="head__suptitle suptitle">
+		@@suptitle.left
+		<span><img src="img/icons/icon-circles.svg" alt="icon"></span>
+		@@suptitle.right
+	</div>
+	<h3 class="head__title title-3"> 
+		@@title
+	</h3>
+	@@if (subtitle.is === true) {
+		<div class="head__subtitle">@@subtitle.text</div>
+	} 
+	@@if (text.is === true) {
+		<div class="head__text text">@@text.text</div>
+	} 
+</div>

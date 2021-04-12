@@ -1,0 +1,58 @@
+<section class="latest-articles _parallax">
+	<div class="latest-articles__decor layer" data-depth="0.15">
+		<img src="img/photo/decor.png" alt="flowers">
+	</div>
+
+	<div class="container">
+		@@include('../head/_head.html',{
+			"parentClass": 'latest-articles__head',
+			"suptitle": {
+				"left": 'our',
+				"right": 'blog'
+			},
+			"title": 'the latest in joolie',
+			"subtitle": {
+				"is": false,
+				"text": 'Lorem ipsum dolor sit amet.',
+			},
+			"text": {
+				"is": true,
+				"text": 'Cupidatat ad in qui est aliqua consectetur incididunt irure. Nostrud magna anim officia ad labore.',
+			},
+	    })
+	    <div class="latest-articles__list swiper-container" data-mobile="false">
+	    	<div class="swiper-wrapper">
+
+	    		<div class="swiper-slide">
+	    			@@include('../card-article/_card-article.html', {
+	    				"parentClass": 'latest-articles__item',
+	    				"imgSrc": 'img/card-article/01.jpg',
+	    				"author": 'Mary Lanoris',
+	    				"date": 'Sep 22, 2020',
+	    				"title": 'How to prepare everything on the high level',
+	    			})
+	    		</div>
+	    		<div class="swiper-slide">
+	    			@@include('../card-article/_card-article.html', {
+	    				"parentClass": 'latest-articles__item',
+	    				"imgSrc": 'img/card-article/02.jpg',
+	    				"author": 'Mary Lanoris',
+	    				"date": 'Sep 22, 2020',
+	    				"title": 'Modern and trading decorations for wedding 2020',
+	    			})
+	    		</div>
+	    		<div class="swiper-slide">
+	    			@@include('../card-article/_card-article.html', {
+	    				"parentClass": 'latest-articles__item',
+	    				"imgSrc": 'img/card-article/03.jpg',
+	    				"author": 'Mary Lanoris',
+	    				"date": 'Sep 22, 2020',
+	    				"title": 'The most important things when you choose the flowers',
+	    			})
+	    		</div>
+
+	    	</div>
+	    	<div class="slider-pagination"></div>
+	    </div>
+	</div>
+</section>

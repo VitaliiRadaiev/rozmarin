@@ -1,0 +1,27 @@
+.head {
+	text-align: center;
+	max-width: 500px;
+	margin: 0 auto 30px;
+
+	&__suptitle {
+		margin-bottom: 0.35em;
+	}
+
+	&__title {
+		margin-bottom: 0.45em;
+	}
+	&__subtitle {
+		font-family: $seconFontFamily;
+		font-size: 22px;
+		line-height: 130%;
+		color: $textColor;
+		margin-bottom: 1.36em;
+	}
+	&__text {}
+}
+.suptitle {
+}
+.title-2 {
+}
+.text {
+}

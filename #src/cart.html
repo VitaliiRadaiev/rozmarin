@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+	@@include('_head.html',{
+	"title": "Joolie"
+	})
+	<body>
+		<!-- == WRAPPER ================== -->
+		<div class="wrapper cart _padding-top">
+			<!-- == HEADER ================== -->
+			@@include('blocks/header/_header.html',{})
+			<!-- == // HEADER ================== -->
+
+			<!-- == PAGE CONTENT ================== -->
+			<main class="page">
+                <!-- == HERO ================== -->
+				@@include('blocks/hero/_hero.html',{
+					"title": 'Cart',
+					"breadcrumb": ['Home'], 
+					"breadcrumbLast": 'Cart',
+                })
+                <!-- == // HERO ================== -->
+
+                <!-- == CART CONTENT ================== -->
+                <section class="cart__content">
+                    <form action="checkout-1.html" class="container">
+                        <div class="block-column-2">
+                            <div class="column-1">
+                                <div class="selected-products">
+                                    <div class="selected-products__head">
+                                        <div class="selected-products__head-col-1">Product</div>
+                                        <div class="selected-products__head-col-2">Quantity</div>
+                                        <div class="selected-products__head-col-3">Subtotal</div>
+                                    </div>
+                                    <ul class="selected-products__list">
+                                        <li>
+                                            <div class="card-selected-product">
+                                                <div class="card-selected-product__img ibg">
+                                                    <a href="product-page.html">
+                                                        <img src="img/card-selected-product/01.jpg" alt="img">
+                                                    </a>
+                                                </div>
+                                                <div class="card-selected-product__inner">
+                                                    <div class="card-selected-product__row card-selected-product__row_1">
+                                                        <div class="card-selected-product__title">
+                                                            <span>
+                                                                Navy Classic Suit
+                                                            </span>
+                                                        </div>
+                                                        <a href="#" class="card-selected-product__delete">
+                                                            <span>
+                                                                <img src="img/icons/delete-grey.svg" alt="delete icon">
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="card-selected-product__row card-selected-product__row_2">
+                                                        <div class="card-selected-product__price-wrap">
+                                                            <div class="card-selected-product__price">$1,318</div>
+                                                            <div class="card-selected-product__old-price">$1,995</div>
+                                                        </div>
+                                                        <div class="card-selected-product__quantity quantity">
+                                                            <div class="quantity__button quantity__button_minus"></div>
+                                                            <div class="quantity__input">
+                                                                <input autocomplete="off" type="text" value="1">
+                                                            </div>
+                                                            <div class="quantity__button quantity__button_plus"></div>
+                                                        </div>
+                                                        <div class="card-selected-product__total-price">$1,318</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="card-selected-product">
+                                                <div class="card-selected-product__img ibg">
+                                                    <a href="product-page.html">
+                                                        <img src="img/card-selected-product/02.jpg" alt="img">
+                                                    </a>
+                                                </div>
+                                                <div class="card-selected-product__inner">
+                                                    <div class="card-selected-product__row card-selected-product__row_1">
+                                                        <div class="card-selected-product__title">
+                                                            <span>
+                                                                Candles For The Ceremony
+                                                            </span>
+                                                        </div>
+                                                        <a href="#" class="card-selected-product__delete">
+                                                            <span>
+                                                                <img src="img/icons/delete-grey.svg" alt="delete icon">
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="card-selected-product__row card-selected-product__row_2">
+                                                        <div class="card-selected-product__price-wrap">
+                                                            <div class="card-selected-product__price">$69</div>
+                                                            <div class="card-selected-product__old-price"></div>
+                                                        </div>
+                                                        <div class="card-selected-product__quantity quantity">
+                                                            <div class="quantity__button quantity__button_minus"></div>
+                                                            <div class="quantity__input">
+                                                                <input autocomplete="off" type="text" value="1">
+                                                            </div>
+                                                            <div class="quantity__button quantity__button_plus"></div>
+                                                        </div>
+                                                        <div class="card-selected-product__total-price">$69</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="cart__row-1">
+                                    <div class="cart__promo-code">
+                                        <input class="cart__promo-code-input input" type="email" placeholder="Enter promo code">
+                                        <button class="cart__promo-code-submit"><span>
+                                            <img class="img-svg" src="img/icons/icon send.svg" alt="icon send">
+                                        </span></button> 
+                                    </div>
+                                    <a href="#" class="cart__refresh">
+                                        <span>
+                                            <img src="img/icons/refresh-ccw.svg" alt="refresh">
+                                        </span>
+                                        Update cart
+                                    </a>
+                                </div>  
+                                <div class="cart__row-2 text-content">
+                                    <h5>How to get a promo code</h5>
+                                    <p>Follow our news on the website, as well as subscribe to our social networks. So you will not only be able to receive up-to-date codes, but also learn about new products and promotional items.</p>
+                                </div>  
+                            </div>
+                            <div class="column-2">
+                                <div class="order-info">
+                                    <h4 class="order-info__title">your order</h4>
+                                    <!-- <ul class="order-info__product-list">
+                                        <li>
+                                            @@include('blocks/card-mini/_card-mini.html',{
+                                                "imgSrc": 'img/card-mini/03.png',
+                                                "title": 'Navy Classic Suit <span>x1</span>',
+                                                "price": '$1,318',
+                                                "oldPrice": {
+                                                is: true,
+                                                price: '$1,995',
+                                                },
+                                                })
+                                        </li>
+                                        <li>
+                                            @@include('blocks/card-mini/_card-mini.html',{
+                                                "imgSrc": 'img/card-mini/04.png',
+                                                "title": 'Candles For The Ceremony <span>x1</span>',
+                                                "price": '$69',
+                                                "oldPrice": {
+                                                is: false,
+                                                price: '',
+                                                },
+                                                })
+                                        </li>
+                                    </ul> -->
+                                    <ul class="order-info__list">
+                                        <li>
+                                            <div class="order-info__list-left">Оrder price</div>
+                                            <div class="order-info__list-right"><strong>$1,387</strong></div>
+                                        </li>
+                                        <li>
+                                            <div class="order-info__list-left">Discount for promo code</div>
+                                            <div class="order-info__list-right">No</div>
+                                        </li>
+                                        <li>
+                                            <div class="order-info__list-left">Delivery <span>(Oct 02 at 14:35)</span></div>
+                                            <div class="order-info__list-right"><strong>$25</strong></div>
+                                        </li>
+                                        <li class="total">
+                                            <div class="order-info__list-left">Total</div>
+                                            <div class="order-info__list-right">$1,412</div>
+                                        </li>
+                                    </ul>
+                                    <button class="btn-submit" type="submit">
+                                        checkout
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </section>
+                <!-- == // CART CONTENT ================== -->
+
+                <!-- == INSTAGRAM BLOCK ================== -->
+                @@include('blocks/instagram-block/_instagram-block.html',{})
+                <!-- == // INSTAGRAM BLOCK ================== -->
+                
+			</main>
+			<!-- == // PAGE CONTENT ================== -->
+
+			<!-- == FOOTER ================== -->
+			@@include('blocks/footer/_footer.html',{})
+			<!-- == // FOOTER ================== -->
+		</div>
+		<!-- == // WRAPPER ================== -->
+		@@include('blocks/popup/_popup.html',{})
+		@@include('_js.html',{})
+	</body>
+</html>

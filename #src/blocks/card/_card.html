@@ -1,0 +1,27 @@
+<div class="card">
+	<div class="card__img ibg">
+		<div class="card__label-wrap">
+			@@if (sale === true) {
+				<div class="card__label sale">Sale</div>
+
+		    }
+	    	@@if (neww === true) {
+	    		<div class="card__label new">New</div>   
+	        }
+			
+		</div>
+		<a href="product-page.html">
+			<img class="lazy" data-src="@@imgSrc" src="img/card/placeholder.jpg" alt="img">
+		</a>
+	</div>
+	<div class="card__bottom">
+		<div class="card__title text">@@title</div>
+		<span class="card__price">@@price</span>
+		@@if (oldPrice.is === true) {
+	    	<span class="card__old-price">@@oldPrice.price</span>
+	    }
+		<a href="#" class="card__like">
+			<img class="img-svg" src="img/icons/heart.svg" alt="icon">
+		</a>
+	</div>
+</div>
