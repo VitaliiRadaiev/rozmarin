@@ -1100,6 +1100,54 @@ if (quantityButtons.length > 0) {
 		});
 	}
 };
+	function createTabs(containerName = false, triggersName = false, tabsName = false) {
+    let container = document.querySelector(`${containerName}`);
+    if(container) {
+       let allTriggers = document.querySelectorAll(`${triggersName}`);
+       let allTabs = document.querySelectorAll(`${tabsName}`);
+
+       if(!allTabs.length) {
+        let err = new Error('Tabs not found.');
+        throw err;
+       }
+
+       if(allTriggers.length) {
+           allTriggers.forEach(trigger => {
+               trigger.addEventListener('click', (e) => {
+                   e.preventDefault();
+                   const id = trigger.getAttribute('href').replace('#','');
+                  
+                   trigger.classList.add('active');
+
+                   allTriggers.forEach(i => {
+                       if(i == trigger) {
+                           return
+                       }
+                       i.classList.remove('active');
+                   });
+
+                   allTabs.forEach(tab => {
+                       if(tab.id == id) {
+                           tab.classList.add('active')
+                       } else {
+                           tab.classList.remove('active');
+                       }
+                   })
+                   
+               })
+           })
+       } else {
+        let err = new Error('Triggers not found.');
+        throw err;
+       }
+        
+    } else {
+      let err = new Error('Container not found.');
+      throw err;
+    }
+}
+
+createTabs('.contact-info','.contact-info__card','.contact-info__tab');;
 
 	// ==== AND PAGES =====================================================
 
@@ -1554,55 +1602,25 @@ function setrating(th, val) {
 });
 
 {
+	function initMap() {
+		let maps = document.querySelectorAll('.contact-info__map');
+		if(maps.length) {
+			maps.forEach(map => {
+				let lat = +map.dataset.lat;
+				let lng = +map.dataset.lng;
+				
+				const datamap = new google.maps.Map(map, {
+					center: {lat: lat, lng: lng},
+					zoom: 16,
+				});
 
+				const marker = new google.maps.Marker({
+					position: {lat: lat, lng: lng},
+					map: datamap,
+				});
 
-	let isMap = document.getElementById("map");
-	if(isMap) {
-		var map;
-
-		let center = {
-			lat: 40.68950,
-			lng: -74.044683,
-		}
-
-		let markerPosition = {
-			lat: 40.68950,
-			lng: -74.044683,
-		}
-
-		// Функция initMap которая отрисует карту на странице
-		function initMap() {
-
-			// В переменной map создаем объект карты GoogleMaps и вешаем эту переменную на <div id="map"></div>
-			map = new google.maps.Map(document.getElementById('map'), {
-				// При создании объекта карты необходимо указать его свойства
-				// center - определяем точку на которой карта будет центрироваться
-				center: {lat: center.lat, lng: center.lng},
-				// zoom - определяет масштаб. 0 - видно всю платнеу. 18 - видно дома и улицы города.
-
-				zoom: 16,
-
-				// Добавляем свои стили для отображения карты
-				//styles: 
-			});
-
-			// Создаем маркер на карте
-			var marker = new google.maps.Marker({
-
-				// Определяем позицию маркера
-			    position: {lat: markerPosition.lat, lng: markerPosition.lng},
-
-			    // Указываем на какой карте он должен появится. (На странице ведь может быть больше одной карты)
-			    map: map,
-
-			    // Пишем название маркера - появится если навести на него курсор и немного подождать
-			    title: '',
-			    label: '',
-
-			    // Укажем свою иконку для маркера
-			   // icon: 'img/contact/googlMarker.svg',
-			});
-
+			})
 		}
 	}
+
 }
