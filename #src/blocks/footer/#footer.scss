@@ -10,10 +10,9 @@
 	
 	&__decor {
 		position: absolute;
-		top: 0;
-		left:0;
-		width: 80%;
-		height: 90%;
+		top: -40%;
+		left:0%;
+		width: 1000px;
 		z-index: 1;
 		mix-blend-mode: darken;
 
@@ -24,7 +23,7 @@
 
 		& img {
 			width: 100%;
-
+			height: auto;
 			@media (max-width: $md3+px) {
 				object-fit: cover;
 				object-position: right;

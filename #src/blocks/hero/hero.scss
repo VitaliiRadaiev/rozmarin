@@ -11,15 +11,14 @@
 	}
 	&__decor {
 		position: absolute;
-		top: -155px;
-		left: 4%;
-		width: 1880px;
-		height: 567px;
+		top: -263px;
+		right: 0;
+		width: 1000px;
+		height: auto;
 		mix-blend-mode: darken;
 
 		& img {
 			width: 100%;
-			object-fit: cover;
 		}
 	}
 

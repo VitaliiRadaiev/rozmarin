@@ -45,4 +45,7 @@ function createTabs(containerName = false, triggersName = false, tabsName = fals
     }
 }
 
-createTabs('.contact-info','.contact-info__card','.contact-info__tab');
+let contactInfo = document.querySelector('.contact-info')
+    if(contactInfo) {
+        createTabs('.contact-info','.contact-info__card','.contact-info__tab');
+    }

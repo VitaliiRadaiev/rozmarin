@@ -1147,7 +1147,10 @@ if (quantityButtons.length > 0) {
     }
 }
 
-createTabs('.contact-info','.contact-info__card','.contact-info__tab');;
+let contactInfo = document.querySelector('.contact-info')
+    if(contactInfo) {
+        createTabs('.contact-info','.contact-info__card','.contact-info__tab');
+    };
 
 	// ==== AND PAGES =====================================================
 
