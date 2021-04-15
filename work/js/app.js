@@ -899,9 +899,15 @@ $('.option').click(function(event) {
 			if($(this).hasClass('active') && $(this).hasClass('order') ){
 				$(this).toggleClass('orderactive');
 			}
-				$(this).parents('.options').find('.option').removeClass('active');
+				//$(this).parents('.options').find('.option').removeClass('active');
 				$(this).toggleClass('active');
-				$(this).children('input').prop('checked', true);
+				if($(this).children('input')[0].checked) {
+					$(this).children('input').prop('checked', false);
+					
+				} else {
+					$(this).children('input').prop('checked', true);
+					
+				}	
 		}
 	}
 });

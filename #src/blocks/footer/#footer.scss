@@ -10,15 +10,16 @@
 	
 	&__decor {
 		position: absolute;
-		top: -40%;
+		top: -10%;
 		left:0%;
-		width: 1000px;
+		width: 100%;
+		min-width: 1000px;
 		z-index: 1;
 		mix-blend-mode: darken;
 
 		@media (max-width: $md2+px) {
 			width: 100%;
-			top: 25%;
+			top: 7%;
 		}
 
 		& img {

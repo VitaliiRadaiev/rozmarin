@@ -6,7 +6,8 @@
 			position: absolute;
 			bottom: 0;
 			right: 0;
-			width: 1000px;
+			width: 100%;
+			min-width: 800px;
 			z-index: 2;
 			pointer-events: none;
 			mix-blend-mode: darken;
@@ -26,8 +27,9 @@
 		&_2 {
 			position: absolute;
 			bottom: 0;
-			height: 105%;
-			width: 35%;
+			height: 90%;
+			width: 100%;
+			min-width: 1000px;
 			z-index: 3;
 			pointer-events: none;
 			mix-blend-mode: darken;

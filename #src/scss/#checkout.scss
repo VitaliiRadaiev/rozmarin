@@ -220,8 +220,55 @@
     }
 }
 
+.woocommerce {
+    & form {
+        & .delivery-details {
+            & .form-row {
+                padding: 0;
+                margin-bottom: 15px;
+            }
+
+            & .delivery-details__input {
+                & .select2-selection {
+                    min-height: 55px;
+                    border-radius: 0;
+                    border: none;
+                    border-bottom: 1px solid rgba(85, 85, 85, 0.2);
+                    display: flex;
+                    align-items: center;
+
+                    & .select2-selection__rendered {
+                        font-size: 14px;
+                        color: $grey;
+                        padding-left: 0;
+                    }
+
+                    & .select2-selection__arrow {
+                        top: 60%;
+                        transform: translateY(-50%);
+                    }
+
+                }
+            }
+        }
+    }
+}
 
 
+.select2-container {
+    & .select2-dropdown  {
+        border: none;
+        border-radius: 0;
+        box-shadow: 0px 10px 15px rgba($mainColor, 0.2);
+
+        & .select2-results__option {
+            &.select2-results__option--highlighted {
+                background: rgba(236, 157, 171, 0.3);
+                color: #000;
+            }
+        }
+    }
+}
 
 
 
@@ -308,11 +355,21 @@
         }
 
         & > span {
+            display: inline-flex;
             min-width: 50px;
             margin-right: 15px;
+            flex-direction: column;
+            align-items: center;
 
             & img {
                 width: 100%;
+                max-width: 50px;
+                height: auto;
+                display: block;
+            }
+
+            & a {
+                font-size: 12px;
             }
         }
 
@@ -386,3 +443,26 @@
 }
 
 
+// == message =================
+.woocommerce {
+    & .woocommerce-message, & .woocommerce-info, & .woocommerce-error {
+        border: none;
+        background-color: rgba($mainColor, 0.15);
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.4em;
+    }    
+
+    & .woocommerce-message {
+
+    }
+
+    & .woocommerce-info {
+
+    }
+
+    & .woocommerce-error {
+
+    }
+}
+// == and message =================

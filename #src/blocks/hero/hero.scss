@@ -11,14 +11,16 @@
 	}
 	&__decor {
 		position: absolute;
-		top: -263px;
+		top: -100px;
 		right: 0;
-		width: 1000px;
+		width: 100%;
+		min-width: 1000px;
 		height: auto;
 		mix-blend-mode: darken;
 
 		& img {
 			width: 100%;
+			height: auto;
 		}
 	}
 
