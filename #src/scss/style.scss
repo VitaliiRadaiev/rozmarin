@@ -742,7 +742,7 @@ button.btn-default {
 
 		@media (min-width: 992px) {
 			&:hover {
-				color: rgb(241, 24, 64);
+				color: $hoverLinkColor;
 
 			}
 		}

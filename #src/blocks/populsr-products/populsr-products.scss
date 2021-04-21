@@ -139,6 +139,9 @@
 		display: flex;
 		flex-wrap: wrap;
 		margin: 0 -15px;
+		justify-content: center;
+		padding-bottom: 40px;
+		font-size: 22px;
 
 		@media (max-width: $md2+px) {
 			margin: 0 -7.5px;

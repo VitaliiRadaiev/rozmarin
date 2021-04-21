@@ -1,5 +1,173 @@
 @charset "UTF-8";
 
+@font-face {
+  font-family: "Montserrat";
+  font-display: swap;
+  src: url("../fonts/Montserrat-Black.woff") format("woff"), url("../fonts/Montserrat-Black.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat-BlackItalic";
+  font-display: swap;
+  src: url("../fonts/Montserrat-BlackItalic.woff") format("woff"), url("../fonts/Montserrat-BlackItalic.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-display: swap;
+  src: url("../fonts/Montserrat-Bold.woff") format("woff"), url("../fonts/Montserrat-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat-BoldItalic";
+  font-display: swap;
+  src: url("../fonts/Montserrat-BoldItalic.woff") format("woff"), url("../fonts/Montserrat-BoldItalic.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-display: swap;
+  src: url("../fonts/Montserrat-ExtraBold.woff") format("woff"), url("../fonts/Montserrat-ExtraBold.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat-ExtraBoldItalic";
+  font-display: swap;
+  src: url("../fonts/Montserrat-ExtraBoldItalic.woff") format("woff"), url("../fonts/Montserrat-ExtraBoldItalic.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-display: swap;
+  src: url("../fonts/Montserrat-ExtraLight.woff") format("woff"), url("../fonts/Montserrat-ExtraLight.woff2") format("woff2");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat-ExtraLightItalic";
+  font-display: swap;
+  src: url("../fonts/Montserrat-ExtraLightItalic.woff") format("woff"), url("../fonts/Montserrat-ExtraLightItalic.woff2") format("woff2");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat-Italic";
+  font-display: swap;
+  src: url("../fonts/Montserrat-Italic.woff") format("woff"), url("../fonts/Montserrat-Italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-display: swap;
+  src: url("../fonts/Montserrat-Light.woff") format("woff"), url("../fonts/Montserrat-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat-LightItalic";
+  font-display: swap;
+  src: url("../fonts/Montserrat-LightItalic.woff") format("woff"), url("../fonts/Montserrat-LightItalic.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-display: swap;
+  src: url("../fonts/Montserrat-Medium.woff") format("woff"), url("../fonts/Montserrat-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat-MediumItalic";
+  font-display: swap;
+  src: url("../fonts/Montserrat-MediumItalic.woff") format("woff"), url("../fonts/Montserrat-MediumItalic.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-display: swap;
+  src: url("../fonts/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-display: swap;
+  src: url("../fonts/Montserrat-SemiBold.woff") format("woff"), url("../fonts/Montserrat-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat-SemiBoldItalic";
+  font-display: swap;
+  src: url("../fonts/Montserrat-SemiBoldItalic.woff") format("woff"), url("../fonts/Montserrat-SemiBoldItalic.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-display: swap;
+  src: url("../fonts/Montserrat-Thin.woff") format("woff"), url("../fonts/Montserrat-Thin.woff2") format("woff2");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat-ThinItalic";
+  font-display: swap;
+  src: url("../fonts/Montserrat-ThinItalic.woff") format("woff"), url("../fonts/Montserrat-ThinItalic.woff2") format("woff2");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SulphurPoint";
+  font-display: swap;
+  src: url("../fonts/SulphurPoint-Bold.woff") format("woff"), url("../fonts/SulphurPoint-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SulphurPoint";
+  font-display: swap;
+  src: url("../fonts/SulphurPoint-Light.woff") format("woff"), url("../fonts/SulphurPoint-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SulphurPoint";
+  font-display: swap;
+  src: url("../fonts/SulphurPoint-Regular.woff") format("woff"), url("../fonts/SulphurPoint-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
@@ -2262,7 +2430,7 @@ main.page {
   font-size: 14px;
   line-height: 170%;
   text-transform: uppercase;
-  color: #ec9dab;
+  color: #ECA614;
   /*	@media (max-width: 575px) {
 		font-size: 9px;
 	}*/
@@ -2333,7 +2501,7 @@ button.btn-default {
           align-items: center;
   min-height: 50px;
   padding: 10px 40px;
-  background: #ec9dab;
+  background: #ECA614;
   -webkit-transition: all .2s ease;
   -o-transition: all .2s ease;
   transition: all .2s ease;
@@ -2513,7 +2681,7 @@ button.btn-default {
 }
 
 .link:hover {
-  color: #ec9dab;
+  color: #ECA614;
   text-decoration: none !important;
 }
 
@@ -2640,7 +2808,7 @@ button.btn-default {
 .text-content a {
   font-size: 16px;
   line-height: 170%;
-  color: #ec9dab;
+  color: #ECA614;
   margin-bottom: 1em;
   -webkit-transition: all .2s ease;
   -o-transition: all .2s ease;
@@ -3148,7 +3316,7 @@ button.btn-default {
 }
 
 .price-filter .noUi-connect {
-  background: #ec9dab;
+  background: #ECA614;
   width: 100%;
   height: 100%;
 }
@@ -3156,7 +3324,7 @@ button.btn-default {
 .price-filter .noUi-handle {
   width: 16px;
   height: 16px;
-  background: #ec9dab;
+  background: #ECA614;
   border-radius: 50%;
   position: absolute;
   top: -7px;
@@ -3377,13 +3545,13 @@ button.btn-default {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #ec9dab;
+  background: #ECA614;
   -webkit-transition: all .2s ease;
   -o-transition: all .2s ease;
   transition: all .2s ease;
   margin-right: 17px;
   margin-top: 20px;
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 12px;
   line-height: 170%;
@@ -3392,7 +3560,7 @@ button.btn-default {
 }
 
 .top-product-page__btn-add-to-card:active {
-  background: #f11840;
+  background: #eec160;
 }
 
 .top-product-page__btn-like {
@@ -3412,6 +3580,10 @@ button.btn-default {
   -webkit-transition: all .2s ease;
   -o-transition: all .2s ease;
   transition: all .2s ease;
+}
+
+.top-product-page__btn-like.added {
+  background: #ec9dab;
 }
 
 .top-product-page__btn-like > span {
@@ -3443,6 +3615,7 @@ button.btn-default {
 .slider-product .detail img {
   -o-object-fit: cover;
      object-fit: cover;
+  max-width: none !important;
 }
 
 .slider-product__thumbs {
@@ -3820,7 +3993,7 @@ button.btn-default {
 }
 
 .contact-info__card.active {
-  background-color: rgba(236, 157, 171, 0.2);
+  background-color: rgba(236, 166, 20, 0.2);
 }
 
 .contact-info__card-title {
@@ -3843,11 +4016,11 @@ button.btn-default {
 }
 
 .contact-info__card-adress svg path {
-  fill: #ec9dab;
+  fill: #ECA614;
 }
 
 .contact-info__card-adress svg circle {
-  fill: #ec9dab;
+  fill: #ECA614;
 }
 
 .contact-info__tab {
@@ -3997,7 +4170,7 @@ button.btn-default {
   display: -ms-inline-flexbox;
   display: inline-flex;
   padding: 7px 15px;
-  color: #ec9dab;
+  color: #ECA614;
   -webkit-transition: all .2s ease;
   -o-transition: all .2s ease;
   transition: all .2s ease;
@@ -4223,7 +4396,7 @@ button.btn-default {
 }
 
 .tags > a:hover {
-  color: #ec9dab;
+  color: #ECA614;
 }
 
 .comments {
@@ -4746,8 +4919,8 @@ button.btn-default {
 }
 
 .cart__promo-code-submit:active > span svg {
-  stroke: #ec9dab;
-  fill: #ec9dab;
+  stroke: #ECA614;
+  fill: #ECA614;
 }
 
 .cart__promo-code-submit > span {
@@ -5144,7 +5317,7 @@ button.btn-default {
 }
 
 .order-info__list > li.total .order-info__list-right {
-  color: #ec9dab;
+  color: #ECA614;
   font-weight: 600;
 }
 
@@ -5330,8 +5503,8 @@ button.btn-default {
 .select2-container .select2-dropdown {
   border: none;
   border-radius: 0;
-  -webkit-box-shadow: 0px 10px 15px rgba(236, 157, 171, 0.2);
-          box-shadow: 0px 10px 15px rgba(236, 157, 171, 0.2);
+  -webkit-box-shadow: 0px 10px 15px rgba(236, 166, 20, 0.2);
+          box-shadow: 0px 10px 15px rgba(236, 166, 20, 0.2);
 }
 
 .select2-container .select2-dropdown .select2-results__option.select2-results__option--highlighted {
@@ -5511,7 +5684,7 @@ button.btn-default {
 .woocommerce .woocommerce-info,
 .woocommerce .woocommerce-error {
   border: none;
-  background-color: rgba(236, 157, 171, 0.15);
+  background-color: rgba(236, 166, 20, 0.15);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.4em;
@@ -5721,7 +5894,7 @@ button.btn-default {
   font-weight: 500;
   font-size: 14px;
   line-height: 170%;
-  color: #ec9dab;
+  color: #ECA614;
 }
 
 .order-list__status_delivered {
@@ -5984,7 +6157,7 @@ button.btn-default {
   -webkit-transition: all .2s ease;
   -o-transition: all .2s ease;
   transition: all .2s ease;
-  color: #ec9dab;
+  color: #ECA614;
   font-weight: 500;
   font-size: 14px;
 }
@@ -6083,7 +6256,7 @@ button.btn-default {
   -webkit-transition: all .2s ease;
   -o-transition: all .2s ease;
   transition: all .2s ease;
-  color: #ec9dab;
+  color: #ECA614;
   font-weight: 500;
   font-size: 14px;
 }
@@ -6253,7 +6426,7 @@ button.btn-default {
 }
 
 .header__top-column a:hover {
-  color: #ec9dab;
+  color: #ECA614;
 }
 
 .header__top-column:first-child {
@@ -6333,8 +6506,8 @@ button.btn-default {
 .header__menu-sublist {
   display: none;
   background: #fff;
-  -webkit-box-shadow: 0px 0px 10px rgba(236, 157, 171, 0.3);
-          box-shadow: 0px 0px 10px rgba(236, 157, 171, 0.3);
+  -webkit-box-shadow: 0px 0px 10px rgba(236, 166, 20, 0.3);
+          box-shadow: 0px 0px 10px rgba(236, 166, 20, 0.3);
   position: absolute;
   top: 100%;
   left: 0;
@@ -6389,7 +6562,7 @@ button.btn-default {
 }
 
 .header__menu-sublink:hover {
-  background: rgba(236, 157, 171, 0.3);
+  background: rgba(236, 166, 20, 0.3);
 }
 
 .header__logo {
@@ -6436,7 +6609,7 @@ button.btn-default {
 }
 
 .header__action-link:hover {
-  background: rgba(236, 157, 171, 0.3);
+  background: rgba(236, 166, 20, 0.3);
 }
 
 .header__action-icon-wrap {
@@ -6472,8 +6645,8 @@ button.btn-default {
   padding: 0px 4px 0;
   min-width: 18px;
   height: 18px;
-  border-radius: 50%;
-  background: #ec9dab;
+  border-radius: 99px;
+  background: #ECA614;
   font-weight: bold;
   font-size: 14px;
   color: #fff;
@@ -6482,6 +6655,7 @@ button.btn-default {
 .footer {
   position: relative;
   padding-top: 110px;
+  overflow: hidden;
 }
 
 .footer__decor {
@@ -6715,7 +6889,7 @@ button.btn-default {
 }
 
 .footer__form-submit:active > span svg {
-  stroke: #ec9dab;
+  stroke: #ECA614;
 }
 
 .footer__form-submit > span {
@@ -7604,6 +7778,11 @@ button.btn-default {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: 0 -15px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 40px;
+  font-size: 22px;
 }
 
 .popular-products__list > li {
@@ -7662,7 +7841,7 @@ button.btn-default {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #ec9dab;
+  background: #ECA614;
   padding: 2px 2px;
   font-weight: bold;
   font-size: 10px;
@@ -7673,7 +7852,7 @@ button.btn-default {
 }
 
 .card__label.sale {
-  background: #EC9DAB;
+  background: #ECA614;
 }
 
 .card__label.new {
@@ -7902,7 +8081,7 @@ button.btn-default {
 
 .advantages__text a {
   font-weight: 500;
-  color: #ec9dab;
+  color: #ECA614;
   -webkit-transition: all .2s ease;
   -o-transition: all .2s ease;
   transition: all .2s ease;
@@ -7944,6 +8123,7 @@ button.btn-default {
   bottom: 0;
   width: 100%;
   min-width: 800px;
+  max-width: 1920px;
   mix-blend-mode: darken;
 }
 
@@ -7952,6 +8132,7 @@ button.btn-default {
   height: auto;
   -o-object-fit: contain;
      object-fit: contain;
+  max-height: 100%;
 }
 
 .get-your-gift-block__img {
@@ -8207,11 +8388,11 @@ button.btn-default {
 }
 
 .card-article__share:hover {
-  color: #ec9dab;
+  color: #ECA614;
 }
 
 .card-article__share:hover svg {
-  stroke: #ec9dab;
+  stroke: #ECA614;
 }
 
 .card-article__share svg {
@@ -8227,7 +8408,7 @@ button.btn-default {
 }
 
 .card-article__title > a:hover {
-  color: #ec9dab;
+  color: #ECA614;
 }
 
 .testimonials-slider {
@@ -8506,7 +8687,7 @@ button.btn-default {
 }
 
 .time-block__item:nth-child(3) .time-block__count {
-  color: #ec9dab;
+  color: #ECA614;
   position: relative;
 }
 
@@ -8518,11 +8699,11 @@ button.btn-default {
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
-  color: #ec9dab;
+  color: #ECA614;
 }
 
 .time-block__item:nth-child(4) .time-block__count {
-  color: #ec9dab;
+  color: #ECA614;
 }
 
 .time-block__count {
@@ -9174,13 +9355,13 @@ button.btn-default {
 
 @media (min-width: 992px) {
   .select__option:hover {
-    background: rgba(236, 157, 171, 0.3);
+    background: rgba(236, 166, 20, 0.3);
   }
 
   .btn-default:hover {
     border-left: 2px solid #111111;
     border-right: 2px solid #111111;
-    background: rgba(236, 157, 171, 0.1);
+    background: rgba(236, 166, 20, 0.1);
   }
 
   .btn-default:hover:before {
@@ -9200,11 +9381,11 @@ button.btn-default {
   }
 
   .btn-submit:hover {
-    background: #f11840;
+    background: #eec160;
   }
 
   .text-content a:hover {
-    color: #f11840;
+    color: #eec160;
   }
 
   .text-block-about__column_1 {
@@ -9226,7 +9407,7 @@ button.btn-default {
   }
 
   .price-filter .noUi-handle:hover {
-    background: rgba(236, 157, 171, 0.8);
+    background: rgba(236, 166, 20, 0.8);
   }
 
   .top-product-page__size > li > a:hover {
@@ -9242,7 +9423,11 @@ button.btn-default {
   }
 
   .top-product-page__btn-add-to-card:hover {
-    background: #f11840;
+    background: #eec160;
+  }
+
+  .top-product-page__btn-like.added:hover {
+    background: #ec9dab;
   }
 
   .top-product-page__btn-like:hover {
@@ -9254,7 +9439,7 @@ button.btn-default {
   }
 
   .contact-info__card:hover:not(.active) {
-    background-color: rgba(236, 157, 171, 0.1);
+    background-color: rgba(236, 166, 20, 0.1);
   }
 
   .faq__collapse:hover {
@@ -9277,7 +9462,7 @@ button.btn-default {
     -webkit-transition: all .2s ease;
     -o-transition: all .2s ease;
     transition: all .2s ease;
-    stroke: #ec9dab;
+    stroke: #ECA614;
   }
 
   .cart__refresh:hover {
@@ -9301,11 +9486,11 @@ button.btn-default {
   }
 
   .form-log-in__forgot-link:hover {
-    color: #f11840;
+    color: #eec160;
   }
 
   .form-registr__forgot-link:hover {
-    color: #f11840;
+    color: #eec160;
   }
 
   .header__burger {
@@ -9321,22 +9506,22 @@ button.btn-default {
   }
 
   .header__menu-link:hover {
-    background: rgba(236, 157, 171, 0.3);
+    background: rgba(236, 166, 20, 0.3);
   }
 
   .footer__form-submit:hover > span svg {
     -webkit-transition: all .2s ease;
     -o-transition: all .2s ease;
     transition: all .2s ease;
-    stroke: #ec9dab;
+    stroke: #ECA614;
   }
 
   .form-search__label:hover {
-    background: rgba(236, 157, 171, 0.3);
+    background: rgba(236, 166, 20, 0.3);
   }
 
   .form-search__submit:hover {
-    background: rgba(236, 157, 171, 0.3);
+    background: rgba(236, 166, 20, 0.3);
   }
 
   .btn-prev:hover {
@@ -9384,12 +9569,12 @@ button.btn-default {
   }
 
   .card__like:hover svg {
-    fill: #ec9dab !important;
-    stroke: #ec9dab;
+    fill: #ECA614 !important;
+    stroke: #ECA614;
   }
 
   .advantages__text a:hover {
-    color: rgba(236, 157, 171, 0.6);
+    color: rgba(236, 166, 20, 0.6);
   }
 
   .latest-articles__list .swiper-slide {
@@ -9403,12 +9588,12 @@ button.btn-default {
   }
 
   .instagram-block__link:hover {
-    color: #ec9dab;
+    color: #ECA614;
   }
 
   .instagram-block__link:hover svg {
-    stroke: #ec9dab;
-    fill: #ec9dab;
+    stroke: #ECA614;
+    fill: #ECA614;
   }
 }
 
@@ -9803,8 +9988,8 @@ button.btn-default {
 
   .header__menu-sublist {
     position: static;
-    -webkit-box-shadow: 0px 6px 10px -3px rgba(236, 157, 171, 0.3);
-            box-shadow: 0px 6px 10px -3px rgba(236, 157, 171, 0.3);
+    -webkit-box-shadow: 0px 6px 10px -3px rgba(236, 166, 20, 0.3);
+            box-shadow: 0px 6px 10px -3px rgba(236, 166, 20, 0.3);
     margin-bottom: 20px;
     background: transparent;
   }
